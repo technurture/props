@@ -1,0 +1,42 @@
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+#20 101.0 Failed to compile.
+#20 101.0 
+#20 101.0 ./src/components/patients/editPatient.tsx:116:26
+#20 101.0 Type error: Property 'age' does not exist on type 'Patient'.
+#20 101.0 
+#20 101.0   114 |         lastName: patientData.lastName || "",
+#20 101.0   115 |         bloodGroup: patientData.bloodGroup || "",
+#20 101.0 > 116 |         age: patientData.age ? patientData.age.toString() : "",
+#20 101.0       |                          ^
+#20 101.0   117 |         dateOfBirth: patientData.dateOfBirth ? new Date(patientData.dateOfBirth).toISOString() : "",
+#20 101.0   118 |         patientType: patientData.patientType || "",
+#20 101.0   119 |         gender: patientData.gender || "",
+#20 101.2 Next.js build worker exited with code: 1 and signal: null
+#20 101.2 npm notice
+#20 101.2 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#20 101.2 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#20 101.2 npm notice To update run: npm install -g npm@11.6.1
+#20 101.2 npm notice
+#20 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+------
+ > [builder 4/4] RUN npm run build:
+101.0       |                          ^
+101.0   117 |         dateOfBirth: patientData.dateOfBirth ? new Date(patientData.dateOfBirth).toISOString() : "",
+101.0   118 |         patientType: patientData.patientType || "",
+101.0   119 |         gender: patientData.gender || "",
+101.2 Next.js build worker exited with code: 1 and signal: null
+101.2 npm notice
+101.2 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+101.2 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+101.2 npm notice To update run: npm install -g npm@11.6.1
+101.2 npm notice
+------
+Dockerfile:25
+--------------------
+  23 |     
+  24 |     # Build the Next.js application
+  25 | >>> RUN npm run build
+  26 |     
+  27 |     # Production image, copy all the files and run next
+--------------------
+error: failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1

@@ -1,0 +1,24 @@
+<svg width="220" height="40" viewBox="0 0 220 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Medical Symbol Circle (Light version) -->
+  <circle cx="20" cy="20" r="18" fill="#2563EB" stroke="#1E40AF" stroke-width="2"/>
+  
+  <!-- Caduceus/Medical Symbol -->
+  <g transform="translate(20, 20)">
+    <!-- Staff -->
+    <line x1="0" y1="-12" x2="0" y2="10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Snake 1 -->
+    <path d="M -4 -8 Q -6 -6, -4 -4 Q -2 -2, -4 0 Q -6 2, -4 4" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Snake 2 -->
+    <path d="M 4 -8 Q 6 -6, 4 -4 Q 2 -2, 4 0 Q 6 2, 4 4" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Wings -->
+    <path d="M -7 -10 Q -10 -12, -12 -10 Q -10 -9, -7 -10" fill="white"/>
+    <path d="M 7 -10 Q 10 -12, 12 -10 Q 10 -9, 7 -10" fill="white"/>
+  </g>
+  
+  <!-- Text: Life Point Medical Centre (White for dark backgrounds) -->
+  <text x="48" y="18" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Life Point</text>
+  <text x="48" y="32" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#E2E8F0">Medical Centre</text>
+</svg>

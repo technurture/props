@@ -1,0 +1,43 @@
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+#20 107.5 Failed to compile.
+#20 107.5 
+#20 107.5 ./src/components/patients/allPatientsList.tsx:258:57
+#20 107.5 Type error: Property 'phoneNumber' does not exist on type 'Patient'.
+#20 107.5 
+#20 107.5   256 |                           </td>
+#20 107.5   257 |                           <td>{patient.gender}</td>
+#20 107.5 > 258 |                           <td>{patient.phone || patient.phoneNumber}</td>
+#20 107.5       |                                                         ^
+#20 107.5   259 |                           <td>{patient.bloodGroup || "N/A"}</td>
+#20 107.5   260 |                           <td>{formatDate(patient.dateOfBirth)}</td>
+#20 107.5   261 |                           {isAdmin && (
+#20 107.7 Next.js build worker exited with code: 1 and signal: null
+#20 107.7 npm notice
+#20 107.7 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#20 107.7 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#20 107.7 npm notice To update run: npm install -g npm@11.6.1
+#20 107.7 npm notice
+#20 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+------
+ > [builder 4/4] RUN npm run build:
+107.5       |                                                         ^
+107.5   259 |                           <td>{patient.bloodGroup || "N/A"}</td>
+107.5   260 |                           <td>{formatDate(patient.dateOfBirth)}</td>
+107.5   261 |                           {isAdmin && (
+107.7 Next.js build worker exited with code: 1 and signal: null
+107.7 npm notice
+107.7 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+107.7 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+107.7 npm notice To update run: npm install -g npm@11.6.1
+107.7 npm notice
+------
+Dockerfile:25
+--------------------
+  23 |     
+  24 |     # Build the Next.js application
+  25 | >>> RUN npm run build
+  26 |     
+  27 |     # Production image, copy all the files and run next
+--------------------
+error: failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+error: exit status 1

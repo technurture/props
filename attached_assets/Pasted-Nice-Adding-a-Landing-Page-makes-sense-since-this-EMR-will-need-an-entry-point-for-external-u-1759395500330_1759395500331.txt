@@ -1,0 +1,130 @@
+Nice 👍 Adding a **Landing Page** makes sense since this EMR will need an entry point for external users (patients, partners, or even hospital staff before logging in). I’ll extend the PRD with **Landing Page requirements**.
+
+Here’s the updated PRD with **Landing Page** added:
+
+---
+
+# **Product Requirements Document (PRD)**
+
+## **Electronic Medical Record (EMR) System**
+
+---
+
+### **1. Project Overview**
+
+The EMR system is a branch-specific, role-based medical record management platform designed to streamline patient care, clinical workflows, billing, and communication across different hospital units. The system supports multiple staff roles with distinct permissions, in-app messaging, and notifications to ensure smooth operations.
+
+A **Landing Page** will serve as the public-facing entry point to introduce the hospital/clinic EMR system, provide information to patients, and allow quick access to login or appointment booking.
+
+---
+
+### **2. Objectives**
+
+* Provide a **centralized patient record system** accessible to authorized staff.
+* Support **branch-specific operations** with login tracking and attendance.
+* Enable **role-based workflows** for front desk, nurses, doctors, lab technicians, pharmacy, billing, and accounting.
+* Ensure **smooth patient flow handovers** between staff via clock-out notifications.
+* Provide a **public landing page** for external visibility, patient engagement, and system entry.
+
+---
+
+### **3. User Roles & Permissions**
+
+*(same as previously updated, with Front Desk final clock-out logic applied)*
+
+---
+
+### **4. Core Features**
+
+#### **4.1 Landing Page**
+
+The Landing Page will serve as the first point of contact for patients and staff.
+
+**Sections/Features:**
+
+* **Header & Navigation:** Logo, navigation to About, Services, Insurance, Contact, Login.
+* **Hero Section:** Short intro to the hospital/clinic system, tagline, and call-to-action (e.g., “Book Appointment” / “Login to EMR”).
+* **About Section:** Brief overview of the hospital/clinic and the EMR benefits.
+* **Services Section:** Highlight available services (Consultation, Lab, Pharmacy, Billing, Insurance Support).
+* **Insurance Information:** Showcase supported insurance providers and claims process.
+* **Patient Access:** Button/link to login for registered patients to check appointments, bills, or medical history.
+* **Staff Access:** Secure login for doctors, nurses, lab, billing, and admin staff.
+* **Contact Section:** Address, phone, email, and contact form.
+* **Footer:** Quick links, social media, copyright.
+
+**Optional Enhancements:**
+
+* Blog/News section (health tips, clinic updates).
+* Testimonials (patient reviews).
+* Branch locator (map with addresses).
+
+#### **4.2 Authentication & Access**
+
+* Role-based login.
+* Branch-specific access.
+* Attendance logs (staff login/logout).
+* **Clocking System:**
+
+  * All staff can “clock out” patients from their stage (with comments & next action).
+  * Front Desk does the **final clock-out** to close the case.
+
+#### **4.3 Patient Management**
+
+*(same as before)*
+
+#### **4.4 Appointment Scheduling**
+
+*(same as before, but patients may also request an appointment via Landing Page)*
+
+#### **4.5 In-App Messaging & Notifications**
+
+*(same as before)*
+
+#### **4.6 Clinical Workflow**
+
+*(same as before, with stage clock-outs & front desk finalization)*
+
+#### **4.7 Billing & Payments**
+
+*(same as before)*
+
+#### **4.8 Accounting & Finance**
+
+*(same as before)*
+
+---
+
+### **5. System Modules**
+
+* **Landing Page Module** (public-facing, informational, patient/staff login gateway).
+* **Login & Attendance Module.**
+* **Patient Management Module.**
+* **Appointments Module.**
+* **Clocking & Workflow Module.**
+* **Messaging & Notification Module.**
+* **Billing & Payment Module.**
+* **Accounting Module.**
+* **Insurance Module.**
+
+---
+
+### **6. Non-Functional Requirements**
+
+*(same as before, but include SEO & responsiveness for Landing Page)*
+
+* **SEO Optimized Landing Page** for discoverability.
+* **Responsive Design:** Works on desktop, tablet, and mobile.
+
+---
+
+### **7. Success Metrics**
+
+* Landing Page increases patient awareness and engagement.
+* Patients can request/book appointments directly online.
+* Staff adoption of EMR increases due to easy access from landing page.
+* Streamlined patient journey from landing page to in-clinic workflows.
+
+---
+
+⚡ Question for you:
+Do you want the **Landing Page** to be **generic (for hospital info)**, or more of a **Patient Portal** (where patients can log in, book appointments, check bills, etc.)? That choice will determine how much **interactivity** we add to the landing page.

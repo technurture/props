@@ -1,0 +1,326 @@
+#19 82.83 145:5  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 158:9  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 
+#19 82.83 ./src/app/api/appointments/route.ts
+#19 82.83 10:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/attendance/route.ts
+#19 82.83 4:8  Warning: 'User' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 5:23  Warning: 'checkRole' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/billing/invoices/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/billing/pay/route.ts
+#19 82.83 5:8  Warning: 'Patient' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/billing/payments/route.ts
+#19 82.83 7:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/billing/verify/route.ts
+#19 82.83 9:52  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/clocking/[visitId]/route.ts
+#19 82.83 10:34  Warning: 'req' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 10:52  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/clocking/queue/route.ts
+#19 82.83 35:11  Warning: 'query' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/app/api/doctors/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 15:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/lab-tests/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/messages/[conversationId]/route.ts
+#19 82.83 5:8  Warning: 'Patient' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/messages/route.ts
+#19 82.83 6:8  Warning: 'Patient' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/notifications/[id]/route.ts
+#19 82.83 4:23  Warning: 'checkRole' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/patients/[id]/route.ts
+#19 82.83 5:34  Warning: 'checkBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 14:34  Warning: 'req' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 14:52  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/patients/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 9:3  Warning: 'extractPaginationParams' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/pharmacy/[id]/route.ts
+#19 82.83 12:12  Warning: 'req' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 12:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 47:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 132:12  Warning: 'req' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 132:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/pharmacy/route.ts
+#19 82.83 7:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 119:13  Warning: 'query' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/app/api/prescriptions/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 15:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/seed/route.ts
+#19 82.83 27:12  Warning: 'req' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 27:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/staff/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 15:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/visits/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/page.tsx
+#19 82.83 60:14  Warning: 'err' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/providers.tsx
+#19 82.83 3:33  Warning: 'useState' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/application/calendar.tsx
+#19 82.83 79:7  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 143:7  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 162:7  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 268:9  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 290:7  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 538:13  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 559:13  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 
+#19 82.83 ./src/components/application/calendarModal.tsx
+#19 82.83 34:9  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 39:9  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 53:7  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 78:7  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 103:9  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 130:7  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 
+#19 82.83 ./src/components/application/searchResult.tsx
+#19 82.83 261:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+#19 82.83 
+#19 82.83 ./src/components/application/socialFeed.tsx
+#19 82.83 572:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+#19 82.83 
+#19 82.83 ./src/components/appointments/modal/appointmentModal.tsx
+#19 82.83 84:10  Warning: 'editData' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 96:6  Warning: React Hook useEffect has a missing dependency: 'fetchAppointmentDetails'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/authentication/register/signUp.tsx
+#19 82.83 85:18  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/dashboard/dashboard.tsx
+#19 82.83 97:14  Warning: 'err' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 112:14  Warning: 'err' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/doctors/addDoctors.tsx
+#19 82.83 5:8  Warning: 'dayjs' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 335:39  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+#19 82.83 
+#19 82.83 ./src/components/doctors/doctorDetails.tsx
+#19 82.83 30:6  Warning: React Hook useEffect has a missing dependency: 'fetchDoctor'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/doctors/editDoctors.tsx
+#19 82.83 52:6  Warning: React Hook useEffect has a missing dependency: 'fetchDoctorData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 280:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+#19 82.83 
+#19 82.83 ./src/components/laboratory/lab-results/labResults.tsx
+#19 82.83 8:10  Warning: 'ILabTest' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 24:10  Warning: 'modalType' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 52:6  Warning: React Hook useEffect has a missing dependency: 'fetchLabTests'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 151:9  Warning: 'endPage' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/components/laboratory/lab-results/modal/labResultsModal.tsx
+#19 82.83 25:3  Warning: 'onClose' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/laboratory/medical-results/medicalResults.tsx
+#19 82.83 8:10  Warning: 'ILabTest' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 24:10  Warning: 'modalType' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 52:6  Warning: React Hook useEffect has a missing dependency: 'fetchLabTests'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 151:9  Warning: 'endPage' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/components/laboratory/medical-results/modal/medicalResultsModal.tsx
+#19 82.83 25:3  Warning: 'onClose' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/manage/branches/BranchManagement.tsx
+#19 82.83 45:6  Warning: React Hook useEffect has a missing dependency: 'fetchBranches'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/manage/notifications/notifications.tsx
+#19 82.83 6:8  Warning: 'ImageWithBasePath' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/manage/staffs/modal/staffsModal.tsx
+#19 82.83 75:6  Warning: React Hook useEffect has a missing dependency: 'getModalId'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 216:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+#19 82.83 
+#19 82.83 ./src/components/manage/staffs/staffs.tsx
+#19 82.83 20:17  Warning: 'session' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/patients/addPatient.tsx
+#19 82.83 9:3  Warning: 'Department' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 11:3  Warning: 'HealthCondition' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 13:3  Warning: 'PatientType' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 14:3  Warning: 'ReferredBy' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 16:3  Warning: 'Type' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 20:8  Warning: 'ImageWithBasePath' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 26:8  Warning: 'dayjs' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/patients/editPatient.tsx
+#19 82.83 9:3  Warning: 'Department' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 11:3  Warning: 'HealthCondition' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 13:3  Warning: 'PatientType' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 14:3  Warning: 'ReferredBy' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 16:3  Warning: 'Type' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 20:8  Warning: 'ImageWithBasePath' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 36:17  Warning: 'session' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 92:6  Warning: React Hook useEffect has a missing dependency: 'fetchPatientData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/patients/modals/documentModal.tsx
+#19 82.83 47:6  Warning: React Hook useEffect has a missing dependency: 'fetchVisits'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/patients/modals/prescriptionModal.tsx
+#19 82.83 6:10  Warning: 'IPrescription' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/patients/modals/visitModal.tsx
+#19 82.83 6:10  Warning: 'IPatientVisit' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/patients/modals/vitalSignsModal.tsx
+#19 82.83 60:6  Warning: React Hook useEffect has a missing dependency: 'fetchVisits'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 64:6  Warning: React Hook useEffect has a missing dependency: 'calculateBMI'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/patients/patientDetails.tsx
+#19 82.83 30:6  Warning: React Hook useEffect has missing dependencies: 'fetchPatientData' and 'router'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/patients/patientDetailsAppointments.tsx
+#19 82.83 56:6  Warning: React Hook useEffect has a missing dependency: 'fetchAppointments'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 99:9  Warning: 'endPage' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/components/patients/patientDetailsDocuments.tsx
+#19 82.83 29:6  Warning: React Hook useEffect has a missing dependency: 'fetchDocuments'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/patients/patientDetailsLabResults.tsx
+#19 82.83 58:6  Warning: React Hook useEffect has a missing dependency: 'fetchLabTests'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 130:9  Warning: 'endPage' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/components/patients/patientDetailsMedicalHistory.tsx
+#19 82.83 33:6  Warning: React Hook useEffect has a missing dependency: 'fetchPatientData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/patients/patientDetailsPrescription.tsx
+#19 82.83 75:6  Warning: React Hook useEffect has a missing dependency: 'fetchPrescriptions'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 164:9  Warning: 'endPage' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/components/patients/patientDetailsVisitHistory.tsx
+#19 82.83 60:6  Warning: React Hook useEffect has a missing dependency: 'fetchVisits'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 62:9  Warning: 'formatDate' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 154:9  Warning: 'endPage' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/components/patients/patientDetailsVitalSigns.tsx
+#19 82.83 36:11  Warning: 'sortedSigns' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 56:6  Warning: React Hook useEffect has a missing dependency: 'fetchVitalSigns'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/components/pharmacy/pharmacy.tsx
+#19 82.83 19:17  Warning: 'session' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/ui-intrerface/base-ui/ui-list-group/uiListGroup.tsx
+#19 82.83 106:19  Warning: The attribute aria-disabled is not supported by the role listitem. This role is implicit on the element li.  jsx-a11y/role-supports-aria-props
+#19 82.83 
+#19 82.83 ./src/components/ui-intrerface/base-ui/ui-tooltips/uiTooltips.tsx
+#19 82.83 9:5  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 17:9  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 
+#19 82.83 ./src/components/visits/modal/visitsModal.tsx
+#19 82.83 20:17  Warning: 'session' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/components/visits/startVisits.tsx
+#19 82.83 21:17  Warning: 'session' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 40:6  Warning: React Hook useEffect has a missing dependency: 'fetchVisitDetails'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/core/common-components/collapse-icons/collapseIcons.tsx
+#19 82.83 11:5  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 17:9  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 
+#19 82.83 ./src/core/common-components/common-lightbox/Lightbox.tsx
+#19 82.83 134:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+#19 82.83 
+#19 82.83 ./src/core/common-components/common-select/BranchSelect.tsx
+#19 82.83 104:6  Warning: React Hook useEffect has missing dependencies: 'onChange', 'selectedOption', and 'value'. Either include them or remove the dependency array. If 'onChange' changes too often, find the parent component that defines it and wrap that definition in useCallback.  react-hooks/exhaustive-deps
+#19 82.83 115:6  Warning: React Hook useEffect has a missing dependency: 'selectedOption'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/core/common-components/common-time-pickers/CommonTimePicker.tsx
+#19 82.83 10:3  Warning: 'className' is assigned a value but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/core/common-components/header/header.tsx
+#19 82.83 39:9  Warning: 'hiddenLayout' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 85:5  Warning: React Hook useCallback has a missing dependency: 'themeSettings'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 85:16  Warning: React Hook useCallback has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 116:6  Warning: React Hook useCallback has a missing dependency: 'themeSettings'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 116:38  Warning: React Hook useCallback has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 164:5  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 167:7  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 169:9  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 
+#19 82.83 ./src/core/common-components/sidebar/sidebar.tsx
+#19 82.83 94:6  Warning: React Hook useCallback has a missing dependency: 'themeSettings'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 94:17  Warning: React Hook useCallback has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 148:6  Warning: React Hook useEffect has a missing dependency: 'themeSettings'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 149:5  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 150:5  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 151:5  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 152:5  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 153:5  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 154:5  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 155:5  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 156:5  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 157:5  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/core/common-components/text-editor/texteditor.tsx
+#19 82.83 2:40  Warning: 'useEffect' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/hooks/useThemeSettings.ts
+#19 82.83 22:6  Warning: React Hook useCallback has a missing dependency: 'themeSettings'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+#19 82.83 
+#19 82.83 ./src/lib/dbConnect.ts
+#19 82.83 15:5  Warning: 'cached' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/lib/middleware/auth.ts
+#19 82.83 27:12  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 64:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 107:12  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/lib/seed.ts
+#19 82.83 1:8  Warning: 'bcrypt' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/lib/services/api-client.ts
+#19 82.83 3:11  Warning: 'ApiResponse' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/lib/services/notification.ts
+#19 82.83 3:24  Warning: 'AppointmentStatus' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 53:9  Warning: 'patientMessage' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 54:9  Warning: 'doctorMessage' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+#19 109.3    Collecting page data ...
+#19 117.1 ⚠️  Cloudinary environment variables are not fully configured.
+#19 117.1    Required: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET
+#19 117.2 (node:991) [MONGOOSE] Warning: Duplicate schema index on {"productId":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+#19 117.2 (Use `node --trace-warnings ...` to show where the warning was created)
+#19 117.5 ⚠️  Cloudinary environment variables are not fully configured.
+#19 117.5    Required: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET
+#19 117.7 ⚠️  Paystack environment variables are not fully configured.
+#19 117.7    Required: PAYSTACK_SECRET_KEY, PAYSTACK_PUBLIC_KEY
+#19 117.8 ⚠️  Paystack environment variables are not fully configured.
+#19 117.8    Required: PAYSTACK_SECRET_KEY, PAYSTACK_PUBLIC_KEY
+#19 122.9    Generating static pages (0/86) ...
+#19 126.6 ⚠️  Paystack environment variables are not fully configured.
+#19 126.6    Required: PAYSTACK_SECRET_KEY, PAYSTACK_PUBLIC_KEY
+#19 127.1    Generating static pages (21/86) 
+#19 127.4 (node:1156) [MONGOOSE] Warning: Duplicate schema index on {"productId":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+#19 127.4 (Use `node --trace-warnings ...` to show where the warning was created)
+#19 127.4 ⚠️  Cloudinary environment variables are not fully configured.
+#19 127.4    Required: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET
+#19 127.8    Generating static pages (42/86) 
+#19 128.1 ⚠️  Paystack environment variables are not fully configured.

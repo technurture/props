@@ -1,0 +1,71 @@
+#19 82.83 145:5  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 158:9  Warning: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+#19 82.83 
+#19 82.83 ./src/app/api/appointments/route.ts
+#19 82.83 10:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/attendance/route.ts
+#19 82.83 4:8  Warning: 'User' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 5:23  Warning: 'checkRole' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/billing/invoices/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/billing/pay/route.ts
+#19 82.83 5:8  Warning: 'Patient' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/billing/payments/route.ts
+#19 82.83 7:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/billing/verify/route.ts
+#19 82.83 9:52  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/clocking/[visitId]/route.ts
+#19 82.83 10:34  Warning: 'req' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 10:52  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/clocking/queue/route.ts
+#19 82.83 35:11  Warning: 'query' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/app/api/doctors/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 15:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/lab-tests/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/messages/[conversationId]/route.ts
+#19 82.83 5:8  Warning: 'Patient' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/messages/route.ts
+#19 82.83 6:8  Warning: 'Patient' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/notifications/[id]/route.ts
+#19 82.83 4:23  Warning: 'checkRole' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/patients/[id]/route.ts
+#19 82.83 5:34  Warning: 'checkBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 14:34  Warning: 'req' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 14:52  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/patients/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 9:3  Warning: 'extractPaginationParams' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/pharmacy/[id]/route.ts
+#19 82.83 12:12  Warning: 'req' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 12:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 47:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 132:12  Warning: 'req' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 132:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/pharmacy/route.ts
+#19 82.83 7:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 119:13  Warning: 'query' is never reassigned. Use 'const' instead.  prefer-const
+#19 82.83 
+#19 82.83 ./src/app/api/prescriptions/route.ts
+#19 82.83 8:3  Warning: 'shouldAllowCrossBranch' is defined but never used.  @typescript-eslint/no-unused-vars
+#19 82.83 15:30  Warning: 'session' is defined but never used. Allowed unused args must match /^_/u.  @typescript-eslint/no-unused-vars
+#19 82.83 
+#19 82.83 ./src/app/api/seed/route.ts
+#19 82.83 27:12  Warning: 'req' is defined but never used. Allowed unused...

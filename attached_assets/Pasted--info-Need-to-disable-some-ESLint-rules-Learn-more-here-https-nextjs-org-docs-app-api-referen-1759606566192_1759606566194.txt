@@ -1,0 +1,43 @@
+ info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+#19 109.7 Failed to compile.
+#19 109.7 
+#19 109.7 ./src/components/doctors/addDoctors.tsx:470:39
+#19 109.7 Type error: Type 'string' is not assignable to type 'Dayjs'.
+#19 109.7 
+#19 109.7   468 |                                     <CommonDatePicker
+#19 109.7   469 |                                       placeholder="dd/mm/yyyy"
+#19 109.7 > 470 |                                       value={formData.dob}
+#19 109.7       |                                       ^
+#19 109.7   471 |                                       onChange={(date: any) => handleSelectChange('dob', date)}
+#19 109.7   472 |                                     />
+#19 109.7   473 |                                   </div>
+#19 109.9 Next.js build worker exited with code: 1 and signal: null
+#19 109.9 npm notice
+#19 109.9 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#19 109.9 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#19 109.9 npm notice To update run: npm install -g npm@11.6.1
+#19 109.9 npm notice
+#19 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+------
+ > [builder 4/4] RUN npm run build:
+109.7       |                                       ^
+109.7   471 |                                       onChange={(date: any) => handleSelectChange('dob', date)}
+109.7   472 |                                     />
+109.7   473 |                                   </div>
+109.9 Next.js build worker exited with code: 1 and signal: null
+109.9 npm notice
+109.9 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+109.9 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+109.9 npm notice To update run: npm install -g npm@11.6.1
+109.9 npm notice
+------
+Dockerfile:25
+--------------------
+  23 |     
+  24 |     # Build the Next.js application
+  25 | >>> RUN npm run build
+  26 |     
+  27 |     # Production image, copy all the files and run next
+--------------------
+error: failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+error: exit status 1

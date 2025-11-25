@@ -1,0 +1,56 @@
+(node:1) [MONGOOSE] Warning: Duplicate schema index on {"userId":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1) [MONGOOSE] Warning: Duplicate schema index on {"appointmentNumber":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(node:1) [MONGOOSE] Warning: Duplicate schema index on {"encounterId":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(node:1) [MONGOOSE] Warning: Duplicate schema index on {"invoiceNumber":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(node:1) [MONGOOSE] Warning: Duplicate schema index on {"paymentNumber":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+[next-auth][error][NO_SECRET] 
+https://next-auth.js.org/errors#no_secret Please define a `secret` in production. Error [MissingSecretError]: Please define a `secret` in production.
+    at b.assertConfig (.next/server/chunks/7303.js:10:71969)
+    at q (.next/server/chunks/7303.js:10:40751)
+    at async g (.next/server/chunks/7303.js:1:1893)
+    at async a.length.b (.next/server/chunks/7303.js:1:3334)
+    at async k (.next/server/app/api/auth/[...nextauth]/route.js:1:5517)
+    at async g (.next/server/app/api/auth/[...nextauth]/route.js:1:6520) {
+  code: 'NO_SECRET'
+}
+[next-auth][error][NO_SECRET] 
+https://next-auth.js.org/errors#no_secret Please define a `secret` in production. Error [MissingSecretError]: Please define a `secret` in production.
+    at b.assertConfig (.next/server/chunks/7303.js:10:71969)
+    at q (.next/server/chunks/7303.js:10:40751)
+    at async g (.next/server/chunks/7303.js:1:1893)
+    at async a.length.b (.next/server/chunks/7303.js:1:3334)
+    at async k (.next/server/app/api/auth/[...nextauth]/route.js:1:5517)
+    at async g (.next/server/app/api/auth/[...nextauth]/route.js:1:6520) {
+  code: 'NO_SECRET'
+}
+[next-auth][error][NO_SECRET] 
+https://next-auth.js.org/errors#no_secret Please define a `secret` in production. Error [MissingSecretError]: Please define a `secret` in production.
+    at b.assertConfig (.next/server/chunks/7303.js:10:71969)
+    at q (.next/server/chunks/7303.js:10:40751)
+    at async g (.next/server/chunks/7303.js:1:1893)
+    at async a.length.b (.next/server/chunks/7303.js:1:3334)
+    at async k (.next/server/app/api/auth/[...nextauth]/route.js:1:5517)
+    at async g (.next/server/app/api/auth/[...nextauth]/route.js:1:6520) {
+  code: 'NO_SECRET'
+}
+[next-auth][error][NO_SECRET] 
+https://next-auth.js.org/errors#no_secret Please define a `secret` in production. Error [MissingSecretError]: Please define a `secret` in production.
+    at b.assertConfig (.next/server/chunks/7303.js:10:71969)
+    at q (.next/server/chunks/7303.js:10:40751)
+    at async g (.next/server/chunks/7303.js:1:1893)
+    at async a.length.b (.next/server/chunks/7303.js:1:3334)
+    at async k (.next/server/app/api/auth/[...nextauth]/route.js:1:5517)
+    at async g (.next/server/app/api/auth/[...nextauth]/route.js:1:6520) {
+  code: 'NO_SECRET'
+}
+[next-auth][error][NO_SECRET] 
+https://next-auth.js.org/errors#no_secret Please define a `secret` in production. Error [MissingSecretError]: Please define a `secret` in production.
+    at b.assertConfig (.next/server/chunks/7303.js:10:71969)
+    at q (.next/server/chunks/7303.js:10:40751)
+    at async g (.next/server/chunks/7303.js:1:1893)
+    at async a.length.b (.next/server/chunks/7303.js:1:3334)
+    at async k (.next/server/app/api/auth/[...nextauth]/route.js:1:5517)
+    at async g (.next/server/app/api/auth/[...nextauth]/route.js:1:6520) {
+  code: 'NO_SECRET'
+}

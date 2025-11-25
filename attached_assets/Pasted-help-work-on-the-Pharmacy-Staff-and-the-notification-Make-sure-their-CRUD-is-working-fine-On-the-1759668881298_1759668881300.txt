@@ -1,0 +1,39 @@
+help work on the Pharmacy, Staff, and the notification. Make sure their CRUD is working fine.
+On the Pharmacy, don´t forget the Branch, the creat of new drug, edit and delete icons just like the patients, make sure they work fine.
+On the Staff, don´t forget the Branch as well, the creat of new Staff e.g. Nurse, Managers and others, edit and delete icons just like the patients, make sure they work fine.
+On the notification, make sure admin receive notification of all actions been perform and also admin can also send out notification to doctors, Labs, Nurse, Manager, each auxiliary body that have an account on the application and also can also send a general notification to all of them and also can send notification to a specific user on the application.
+Make sure all the CRUD works well.
+Act as a Senior Fullstack Developer and make sure all functionalities are working, communication to the backend and backend to the database and able to fetch them as well when needed too, make sure the application is user friendly and mobile responsiveness, make sure the admin has the full access on the application. make the codebase clean and well structured
+i can see build errors, help resolve that #19 145.5 Error occurred prerendering page "/start-visits". Read more: https://nextjs.org/docs/messages/prerender-error
+#19 145.5 Export encountered an error on /(pages)/(healthcare)/(visits)/start-visits/page: /start-visits, exiting the build.
+#19 145.5 ⨯ Next.js build worker exited with code: 1 and signal: null
+#19 145.9 npm notice
+#19 145.9 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#19 145.9 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#19 145.9 npm notice To update run: npm install -g npm@11.6.1
+#19 145.9 npm notice
+#19 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+
+    [builder 4/4] RUN npm run build:
+    145.5 at ia (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:108211)
+    145.5 at ie (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:106833)
+    145.5 Error occurred prerendering page "/start-visits". Read more: https://nextjs.org/docs/messages/prerender-error
+    145.5 Export encountered an error on /(pages)/(healthcare)/(visits)/start-visits/page: /start-visits, exiting the build.
+    145.5 ⨯ Next.js build worker exited with code: 1 and signal: null
+    145.9 npm notice
+    145.9 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+    145.9 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+    145.9 npm notice To update run: npm install -g npm@11.6.1
+    145.9 npm notice
+
+Dockerfile:25
+23 |
+24 | # Build the Next.js application
+25 | >>> RUN npm run build
+26 |
+27 | # Production image, copy all the files and run next
+
+error: failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+error: exit status 1
+help run build command and solve the build issue at the end of all the implementation.
+make sure all error are solve and the build successfully run

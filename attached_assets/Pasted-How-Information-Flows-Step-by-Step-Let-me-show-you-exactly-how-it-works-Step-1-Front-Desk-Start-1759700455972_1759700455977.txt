@@ -1,0 +1,228 @@
+How Information Flows (Step-by-Step)
+
+Let me show you exactly how it works:
+Step 1: Front Desk Starts the Visit
+
+Action: Front desk checks in patient
+System Updates:
+- currentStage = "front_desk"
+- stages.frontDesk.clockedInBy = Front desk staff ID
+- stages.frontDesk.clockedInAt = Current time
+
+Step 2: Transfer to Nurse
+
+Action: Front desk clicks "Send to Nurse"
+System Updates:
+- currentStage = "nurse"
+- stages.frontDesk.clockedOutAt = Current time
+- Notification sent to nurse: "New patient waiting"
+
+Step 3: Nurse Records Vitals
+
+Action: Nurse enters blood pressure, temperature, weight, etc.
+System Updates:
+- stages.nurse.vitalSigns = {BP: "120/80", temp: 98.6, ...}
+- stages.nurse.clockedInBy = Nurse ID
+- Same visit record is updated (NOT a new record)
+
+Step 4: Transfer to Doctor
+
+Action: Nurse clicks "Ready for Doctor"
+System Updates:
+- currentStage = "doctor"
+- stages.nurse.clockedOutAt = Current time
+- Notification sent to doctor: "Patient ready, vitals recorded"
+- Doctor can see all nurse's vitals in the same record
+
+Step 5: Doctor Adds Diagnosis
+
+Action: Doctor enters diagnosis, creates prescription, orders lab test
+System Updates:
+- stages.doctor.diagnosis = "Influenza"
+- stages.doctor.prescription = Link to prescription record
+- stages.doctor.labTests = [Link to lab test order]
+- Same visit record, now with more information
+
+Step 6: Transfer to Lab (if needed)
+
+Action: Doctor clicks "Send to Lab"
+System Updates:
+- currentStage = "lab"
+- Lab technician sees the lab test order from doctor
+- Lab tech adds results to the lab test record
+- Lab test is linked to this visit
+
+Step 7: Transfer to Pharmacy (if needed)
+
+Action: Doctor/Lab clicks "Send to Pharmacy"
+System Updates:
+- currentStage = "pharmacy"
+- Pharmacist sees prescription from doctor
+- Pharmacist marks medication as dispensed
+- All charges are tracked for billing
+
+Step 8: Generate Invoice at Billing
+
+Action: System sends to Billing
+System Collects:
+- Consultation fee (from doctor visit)
+- Lab test charges (from lab)
+- Medication charges (from pharmacy)
+System Creates:
+- Invoice with all charges
+- Links invoice to this visit
+
+🔔 Key Mechanisms to Ensure Data Transfer
+
+Here's what you need to implement to make this work smoothly:
+1. REAL-TIME NOTIFICATIONS
+
+When someone moves a patient forward:
+
+Nurse clicks "Send to Doctor"
+→ System automatically notifies doctor
+→ "Patient [Name] is ready, vitals recorded"
+→ Doctor dashboard shows new patient in queue
+
+2. DEPARTMENT DASHBOARDS
+
+Each department sees their pending work:
+
+Nurse Dashboard:
+- Patients waiting for vitals (currentStage = "nurse")
+- Shows 5 patients in queue
+
+Doctor Dashboard:
+- Patients ready for consultation (currentStage = "doctor")
+- Can see patient's vitals from nurse
+
+3. LINKED RECORDS
+
+All related information is connected:
+
+Visit → Patient → Vitals → Diagnosis → Prescription → Lab Tests → Invoice
+Everything linked through the visit ID
+
+4. API ENDPOINTS FOR UPDATES
+
+Each department uses API calls to update the visit:
+
+POST /api/visits/[visitId]/update-stage
+{
+  "newStage": "doctor",
+  "nurseNotes": "Patient ready, all vitals recorded"
+}
+
+✅ What You Need to Implement
+
+Your data models are already perfect! You just need to:
+1. Create the Update Flow APIs (Most Important!)
+
+/api/visits/[id]/transfer-to-nurse
+/api/visits/[id]/transfer-to-doctor
+/api/visits/[id]/transfer-to-lab
+/api/visits/[id]/transfer-to-pharmacy
+/api/visits/[id]/transfer-to-billing
+
+2. Build Department Queues
+
+Each department sees their pending patients:
+
+    Nurse Queue: All visits where currentStage = "nurse"
+    Doctor Queue: All visits where currentStage = "doctor"
+    Lab Queue: All visits where currentStage = "lab"
+
+3. Add Notification System
+
+When stage changes, notify next person:
+
+    Send in-app notification
+    Update their dashboard count
+    Optional: SMS/Email for urgent cases
+
+4. Create Handoff Buttons
+
+Add buttons in the UI:
+
+[Send to Nurse] → Updates currentStage, notifies nurse
+[Send to Doctor] → Updates currentStage, notifies doctor
+[Send to Lab] → Updates currentStage, notifies lab
+
+5. Display Full Visit Timeline
+
+Show everyone what happened before:
+
+Patient Visit Timeline:
+9:00 AM - Checked in (Front Desk - Jane)
+9:15 AM - Vitals recorded (Nurse - Mary)
+9:30 AM - Diagnosed (Doctor - Dr. Smith)
+10:00 AM - Lab test ordered
+10:30 AM - Results ready
+11:00 AM - Medication dispensed
+
+🚀 Practical Example of Data Flow
+
+Let me show you a complete real-world example:
+
+Patient: Sarah Johnson arrives at 9:00 AM
+
+    Front Desk (9:00 AM): Creates visit record
+        Visit ID: V-2025-001
+        Patient: Sarah Johnson
+        Current Stage: front_desk
+        Clocked In By: Jane (Front Desk)
+
+    Transfer to Nurse (9:05 AM): Front desk clicks "Send to Nurse"
+        Current Stage: nurse
+        Notification: "New patient waiting for vitals"
+
+    Nurse (9:15 AM): Records vitals in same visit V-2025-001
+        BP: 120/80
+        Temp: 98.6°F
+        Weight: 65kg
+        Current Stage: still "nurse"
+
+    Transfer to Doctor (9:25 AM): Nurse clicks "Ready for Doctor"
+        Current Stage: doctor
+        Doctor sees same visit V-2025-001 with all vitals
+
+    Doctor (9:35 AM): Adds diagnosis to same visit V-2025-001
+        Diagnosis: "Hypertension"
+        Prescription: Created and linked
+        Lab Test: Blood work ordered and linked
+
+    Transfer to Lab (9:50 AM): Doctor clicks "Send to Lab"
+        Current Stage: lab
+        Lab sees visit V-2025-001 with doctor's orders
+
+    Lab (10:15 AM): Adds results to same visit V-2025-001
+        Test results uploaded
+        Charges: $50 added
+
+    Transfer to Pharmacy (10:30 AM): Automatic
+        Current Stage: pharmacy
+        Pharmacist sees prescription from same visit
+
+    Pharmacy (10:45 AM): Dispenses medication
+        Medication given
+        Charges: $30 added
+
+    Transfer to Billing (11:00 AM): Automatic
+        Current Stage: billing
+        System generates invoice from visit V-2025-001
+        Total: Consultation ($100) + Lab ($50) + Meds ($30) = $180
+
+    Payment & Complete (11:15 AM): Front desk
+        Payment received
+        Current Stage: completed
+        Visit closed
+
+All departments worked on the SAME visit record (V-2025-001)!
+🎯 Next Steps to Implement This
+
+Would you like me to:
+
+    Build the API endpoints for transferring patients between stages?
+    Create the department queue pages showing pending patients?
+    Set up the notification system to alert next department?
+    Build the visit timeline view showing complete patient journey?

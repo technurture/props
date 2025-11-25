@@ -1,0 +1,107 @@
+ROLE-BASED ACCESS CONTROL - What Each Role Should Access
+
+Based on your current RBAC system and EMR best practices, here's what each role should access:
+1. ADMIN
+
+Full System Access ✅
+
+    Dashboard, Settings, All modules
+    Patient records (view, create, edit, delete)
+    Staff management, Branch management
+    Appointments, Visits, Lab, Pharmacy
+    Billing, Accounting, Reports
+    User permissions, System configuration
+
+2. DOCTOR
+
+Clinical Focus 🩺
+
+    Dashboard: Their appointments, patient queue
+    Settings: Personal profile, preferences
+    Patients: View all, update medical info
+    Appointments: View, update (assigned to them)
+    Visits: Conduct visits, document diagnosis
+    Vitals: View and record (if needed)
+    Prescriptions: Create, update, delete
+    Lab Orders: Create, view results
+    Pharmacy: View dispensing status
+    Reports: View clinical reports
+
+NO ACCESS: Staff management, Billing details, Accounting, Branch settings
+3. NURSE
+
+Patient Care Support 👩‍⚕️
+
+    Dashboard: Patient queue, assigned tasks
+    Settings: Personal profile
+    Patients: View records
+    Appointments: View, update status
+    Vitals: Primary responsibility - record BP, temp, weight, etc.
+    Visits: Update visit status, handoff to doctor
+    Prescriptions: View only
+    Lab Results: View
+    Pharmacy: View dispensing info
+
+NO ACCESS: Diagnosis, Prescribing, Billing, Staff management
+4. FRONT DESK / RECEPTION
+
+Patient Entry & Exit Point 📋
+
+    Dashboard: Daily appointments, patient flow
+    Settings: Personal profile
+    Patients: Create, view, update demographics
+    Appointments: Full control (create, schedule, cancel, assign doctor)
+    Visits: Start new visit, mark as completed
+    Billing: View invoices, initiate payment (but not full accounting)
+    Reports: Basic patient reports
+
+NO ACCESS: Medical records detail, Lab approval, Pharmacy dispensing, Staff management
+5. LAB TECHNICIAN
+
+Laboratory Management 🔬
+
+    Dashboard: Pending lab tests queue
+    Settings: Personal profile
+    Patients: View basic info
+    Appointments: View (to know expected patients)
+    Lab Tests: View orders, update results, approve/sign-off tests
+    Reports: Lab-specific reports
+
+NO ACCESS: Prescriptions, Billing, Pharmacy, Staff management
+6. PHARMACIST
+
+Medication Dispensing 💊
+
+    Dashboard: Pending prescriptions queue
+    Settings: Personal profile
+    Patients: View basic info and allergies
+    Appointments: View
+    Prescriptions: View all, mark as dispensed
+    Pharmacy Module: Dispense medication, update inventory
+    Reports: Pharmacy reports, inventory levels
+
+NO ACCESS: Lab results, Billing details, Staff management
+7. ACCOUNTANT
+
+Financial Management 💰
+
+    Dashboard: Financial metrics, revenue
+    Settings: Personal profile
+    Patients: View basic info (for billing context)
+    Billing: View all invoices and payments
+    Accounting Module: Full access to financial records
+    Reports: Generate financial reports, reconciliation
+
+NO ACCESS: Medical records, Lab, Pharmacy operations, Staff management
+8. BILLING STAFF
+
+Payment Processing 💳
+
+    Dashboard: Pending payments, today's revenue
+    Settings: Personal profile
+    Patients: View basic info
+    Appointments: View
+    Billing: Create invoices, process payments, issue receipts
+    Reports: Billing reports
+
+NO ACCESS: Medical records, Lab, Pharmacy, Full accounting

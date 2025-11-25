@@ -1,0 +1,42 @@
+#14 146.8  ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/insurance-patient-data". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+01:38:42.761#14 146.8     at g (/app/.next/server/chunks/3116.js:1:151214)
+01:38:42.761#14 146.8     at m (/app/.next/server/chunks/3116.js:10:14408)
+01:38:42.761#14 146.8     at C (/app/.next/server/app/(pages)/(manage-module)/insurance-patient-data/page.js:1:4345)
+01:38:42.761#14 146.8     at n3 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:82831)
+01:38:42.761#14 146.8     at n6 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:84601)
+01:38:42.761#14 146.8     at n6 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:101560)
+01:38:42.761#14 146.8     at n5 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:104801)
+01:38:42.761#14 146.8     at n7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:102219)
+01:38:42.761#14 146.8     at ia (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:108211)
+01:38:42.761#14 146.8     at ie (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:106833)
+01:38:42.761#14 146.8 Error occurred prerendering page "/insurance-patient-data". Read more: https://nextjs.org/docs/messages/prerender-error
+01:38:42.761#14 146.8 Export encountered an error on /(pages)/(manage-module)/insurance-patient-data/page: /insurance-patient-data, exiting the build.
+01:38:42.937#14 146.8  ⨯ Next.js build worker exited with code: 1 and signal: null
+01:38:43.148#14 ERROR: process "/bin/sh -c chmod +x /app/build_cmd_DrLH64Rx7mQZyO6LevPv.sh && \t cd /app && \t sh -eux build_cmd_DrLH64Rx7mQZyO6LevPv.sh" did not complete successfully: exit code: 1
+01:38:43.254------
+01:38:43.254 > [stage-0  6/10] RUN chmod +x /app/build_cmd_DrLH64Rx7mQZyO6LevPv.sh && 	 cd /app && 	 sh -eux build_cmd_DrLH64Rx7mQZyO6LevPv.sh:
+01:38:43.254146.8     at n3 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:82831)
+01:38:43.254146.8     at n6 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:84601)
+01:38:43.254146.8     at n6 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:101560)
+01:38:43.254146.8     at n5 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:104801)
+01:38:43.254146.8     at n7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:102219)
+01:38:43.254146.8     at ia (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:108211)
+01:38:43.254146.8     at ie (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:2:106833)
+01:38:43.254146.8 Error occurred prerendering page "/insurance-patient-data". Read more: https://nextjs.org/docs/messages/prerender-error
+01:38:43.254146.8 Export encountered an error on /(pages)/(manage-module)/insurance-patient-data/page: /insurance-patient-data, exiting the build.
+01:38:43.254146.8  ⨯ Next.js build worker exited with code: 1 and signal: null
+01:38:43.254------
+01:38:43.269--------------------
+01:38:43.269 103 |     
+01:38:43.269 104 | >>> RUN chmod +x /app/build_cmd_DrLH64Rx7mQZyO6LevPv.sh && \
+01:38:43.269 105 | >>> 	 cd /app && \
+01:38:43.269 106 | >>> 	 sh -eux build_cmd_DrLH64Rx7mQZyO6LevPv.sh
+01:38:43.269 107 |     
+01:38:43.269--------------------
+01:38:43.269ERROR: failed to solve: process "/bin/sh -c chmod +x /app/build_cmd_DrLH64Rx7mQZyO6LevPv.sh && \t cd /app && \t sh -eux build_cmd_DrLH64Rx7mQZyO6LevPv.sh" did not complete successfully: exit code: 1
+01:38:43.309❌ Failed to build the image. Please check the build logs for details.
+01:38:43.309🛠️ Tip: Review the output logs carefully to identify any potential issues. Logs often have valuable hints! 📋
+01:38:43.309📚 Need more help? Visit our docs or join our Discord community. We're here to assist you! 💬
+01:38:43.307
+01:38:43.307Something went wrong. Please try again.
+01:38:43.309❌ Failed to build the image. Please check the build logs for details: exit status 1

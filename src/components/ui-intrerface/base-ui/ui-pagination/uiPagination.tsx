@@ -1,0 +1,1078 @@
+"use client";
+
+import AutoBreadcrumb from "@/core/common-components/breadcrumb/AutoBreadcrumb";
+import CommonFooter from "@/core/common-components/common-footer/commonFooter";
+import Link from "next/link";
+
+const UiPaginationComponent = () => {
+  return (
+    <>
+  {/* ========================
+			Start Page Content
+		========================= */}
+  <div className="page-wrapper">
+    {/* Start Content */}
+    <div className="content pb-0">
+      {/* Page Header */}
+      <AutoBreadcrumb title="Pagination" />
+      {/* End Page Header */}
+      {/* start row */}
+      <div className="row">
+        <div className="col-xl-6">
+          <div className="card card-h-100">
+            <div className="card-header">
+              <h5 className="card-title">Default Pagination</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Simple pagination inspired by Rdio, great for apps and search
+                results.
+              </p>
+              <nav>
+                <ul className="pagination mb-0">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <span aria-hidden="true">«</span>
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <span aria-hidden="true">»</span>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+        <div className="col-xl-6">
+          <div className="card">
+            <div className="card-header">
+              <h5 className="card-title">Disabled and Active States</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Pagination links are customizable for different circumstances.
+                Use <code>.disabled</code> for links that appear un-clickable
+                and <code>.active</code> to indicate the current page.
+              </p>
+              <nav aria-label="...">
+                <ul className="pagination mb-0">
+                  <li className="page-item disabled">
+                    <Link className="page-link" href="#" tabIndex={-1}>
+                      Previous
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item active" aria-current="page">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      Next
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+      </div>
+      {/* end row */}
+      {/* start row */}
+      <div className="row">
+        <div className="col-xl-6">
+          <div className="card">
+            <div className="card-header">
+              <h5 className="card-title">Alignment</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Change the alignment of pagination components with flexbox
+                utilities.
+              </p>
+              <nav aria-label="Page navigation example">
+                <ul className="pagination justify-content-center">
+                  <li className="page-item disabled">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      tabIndex={-1}
+                    >
+                      Previous
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      Next
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+              <nav aria-label="Page navigation example">
+                <ul className="pagination justify-content-end">
+                  <li className="page-item disabled">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      tabIndex={-1}
+                    >
+                      Previous
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      Next
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+        <div className="col-xl-6">
+          <div className="card">
+            <div className="card-header">
+              <h5 className="card-title">Sizing</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Add <code> .pagination-lg</code> or <code> .pagination-sm</code>{" "}
+                for additional sizes.
+              </p>
+              <nav>
+                <ul className="pagination pagination-lg">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <span aria-hidden="true">«</span>
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <span aria-hidden="true">»</span>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <ul className="pagination pagination-sm mb-0">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <span aria-hidden="true">«</span>
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <span aria-hidden="true">»</span>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+      </div>
+      {/* end row */}
+      {/* start row */}
+      <div className="row">
+        <div className="col-xl-6">
+          <div className="card">
+            <div className="card-header">
+              <h5 className="card-title">Custom Icon Pagination</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Add <code> .pagination-boxed</code> for rounded pagination.
+              </p>
+              <nav>
+                <ul className="pagination pagination-boxed">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-chevron-left" />
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-chevron-right align-middle" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <ul className="pagination pagination-boxed">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-arrow-left" />
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-arrow-right" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <ul className="pagination pagination-boxed mb-0">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-chevron-left-pipe align-middle" />
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-chevron-right-pipe align-middle" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+        <div className="col-xl-6">
+          <div className="card">
+            <div className="card-header">
+              <h5 className="card-title">Boxed Pagination</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Add <code> .pagination-boxed</code> for rounded pagination.
+              </p>
+              <nav>
+                <ul className="pagination pagination-sm pagination-boxed">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <span aria-hidden="true">«</span>
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <span aria-hidden="true">»</span>
+                    </Link>
+                  </li>
+                </ul>
+                <ul className="pagination pagination-boxed">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <span aria-hidden="true">«</span>
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <span aria-hidden="true">»</span>
+                    </Link>
+                  </li>
+                </ul>
+                <ul className="pagination pagination-lg pagination-boxed mb-0">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <span aria-hidden="true">«</span>
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <span aria-hidden="true">»</span>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+      </div>
+      {/* end row */}
+      {/* start row  */}
+      <div className="row">
+        <div className="col-xl-6">
+          <div className="card">
+            <div className="card-header">
+              <h5 className="card-title">Rounded Pagination</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Add <code> .pagination-rounded</code> for rounded pagination.
+              </p>
+              <nav>
+                <ul className="pagination pagination-rounded pagination-boxed mb-0">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <span aria-hidden="true">«</span>
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <span aria-hidden="true">»</span>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+        <div className="col-xl-6">
+          <div className="card">
+            <div className="card-header">
+              <h5 className="card-title">Soft Pagination</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Add <code> .pagination-rounded</code> for rounded pagination.
+              </p>
+              <nav>
+                <ul className="pagination pagination-soft-primary pagination-boxed mb-0">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-chevron-left" />
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-chevron-right" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+      </div>
+      {/* end row */}
+      {/* start row */}
+      <div className="row">
+        <div className="col-xl-6">
+          <div className="card">
+            <div className="card-header">
+              <h5 className="card-title">Custom Color Pagination</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Add <code> .pagination-boxed</code> for rounded pagination.
+              </p>
+              <nav>
+                <ul className="pagination pagination-boxed pagination-primary">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-chevron-left" />
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-chevron-right align-middle" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <ul className="pagination pagination-boxed pagination-secondary">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-arrow-left" />
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-arrow-right" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <ul className="pagination pagination-boxed pagination-dark mb-0">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-chevron-left-pipe align-middle" />
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-chevron-right-pipe align-middle" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+        <div className="col-xl-6">
+          <div className="card">
+            <div className="card-header">
+              <h5 className="card-title">Gradient Color Pagination</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                Add <code> .pagination-boxed</code> for rounded pagination.
+              </p>
+              <nav>
+                <ul className="pagination pagination-boxed pagination-gradient pagination-primary">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-chevron-left" />
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-chevron-right align-middle" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <ul className="pagination pagination-boxed pagination-secondary pagination-gradient">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-arrow-left" />
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-arrow-right" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+                <ul className="pagination pagination-boxed pagination-dark pagination-gradient mb-0">
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="ti ti-chevron-left-pipe align-middle" />
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      1
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      2
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      3
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link className="page-link" href="#">
+                      4
+                    </Link>
+                  </li>
+                  <li className="page-item active">
+                    <Link className="page-link" href="#">
+                      5
+                    </Link>
+                  </li>
+                  <li className="page-item">
+                    <Link
+                      className="page-link"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="ti ti-chevron-right-pipe align-middle" />
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>{" "}
+            {/* end card body */}
+          </div>{" "}
+          {/* end card */}
+        </div>{" "}
+        {/* end col */}
+      </div>
+      {/* end row */}
+    </div>
+    {/* End Content */}
+    {/* Start Footer */}
+   <CommonFooter/>
+    {/* End Footer */}
+  </div>
+  {/* ========================
+			End Page Content
+		========================= */}
+</>
+
+  )
+}
+
+export default UiPaginationComponent
