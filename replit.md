@@ -3,6 +3,15 @@
 ## Overview
 Life Point Medical Centre EMR is a comprehensive Electronic Medical Records (EMR) system built with Next.js 15 and TypeScript. Its primary purpose is to streamline patient care, clinical workflows, billing, and inter-departmental communication within a medical center. The system supports branch-specific and role-based access, aiming to enhance efficiency and patient outcomes. Key capabilities include patient management, appointment scheduling, clinical workflow management, billing and payments, messaging, and staff attendance tracking. The system integrates insurance management into patient registration to streamline verification and billing processes, and aims to be a leading solution for medical record management in the healthcare sector.
 
+## Recent Changes (November 26, 2025)
+- **Replit Environment Setup**: Configured the application for Replit environment
+  - Updated dev server to run on port 5000 with host 0.0.0.0 for proper proxy support
+  - Updated production start script to use port 5000
+  - Configured workflow "Start application" to run the Next.js dev server
+  - Configured Autoscale deployment with npm build and start commands
+  - All required environment variables (MongoDB, NextAuth, Cloudinary, Paystack) are configured as secrets
+  - Application successfully running and responding on port 5000
+
 ## User Preferences
 The user prefers a development approach that emphasizes:
 - **Clarity**: Simple, clear explanations for any proposed changes or issues.
