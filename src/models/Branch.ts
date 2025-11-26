@@ -12,6 +12,7 @@ export interface IBranch extends Document {
   phone: string;
   email: string;
   manager?: mongoose.Types.ObjectId;
+  tenantId?: mongoose.Types.ObjectId;
   isActive: boolean;
   createdAt: Date;
   updatedAt: Date;
@@ -79,6 +80,11 @@ const BranchSchema = new Schema<IBranch>({
   manager: { 
     type: Schema.Types.ObjectId, 
     ref: 'User'
+  },
+  tenantId: {
+    type: Schema.Types.ObjectId,
+    ref: 'Tenant',
+    index: true
   },
   isActive: { 
     type: Boolean, 

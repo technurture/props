@@ -1,6 +1,7 @@
 // Central model registry to ensure all Mongoose models are registered
 // Import base models first, then dependent models
 
+import Tenant from './Tenant';
 import Branch from './Branch';
 import User from './User';
 import Patient from './Patient';
@@ -21,6 +22,7 @@ import ServiceCharge from './ServiceCharge';
 
 // Export all models
 export {
+  Tenant,
   Branch,
   User,
   Patient,
