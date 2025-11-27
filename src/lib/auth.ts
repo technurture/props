@@ -14,7 +14,10 @@ import User from '@/models/User';
  * The auto-detection prevents hardcoded URLs from breaking authentication
  * when the domain changes (e.g., different Replit domains).
  */
-if (process.env.REPLIT_DEV_DOMAIN && !process.env.NEXTAUTH_URL) {
+const currentUrl = process.env.NEXTAUTH_URL;
+const isLocalhost = !currentUrl || currentUrl.includes('localhost') || currentUrl === '';
+
+if (process.env.REPLIT_DEV_DOMAIN && isLocalhost) {
   process.env.NEXTAUTH_URL = `https://${process.env.REPLIT_DEV_DOMAIN}`;
   console.log(`[NextAuth] Auto-detected URL: ${process.env.NEXTAUTH_URL}`);
 }
