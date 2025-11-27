@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Calendar | Life Point Medical Centre EMR",
+    "Calendar | NuncCare EMR",
 };
 
 export default function CalendarPage() {

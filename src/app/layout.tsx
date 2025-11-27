@@ -9,13 +9,13 @@ import ClientProviders from "./providers"; // 👈 our client wrapper
 import BootstrapJs from "@/core/common-components/bootstrap-js/bootstrapjs";
 
 export const metadata: Metadata = {
-  title: "Dashboard | Life Point Medical Centre - Electronic Medical Records System",
+  title: "Dashboard | NuncCare - Electronic Medical Records System",
   description:
-    "Life Point Medical Centre EMR is a modern, secure, and responsive electronic medical records management system.",
+    "NuncCare EMR is a modern, secure, and responsive electronic medical records management system for healthcare providers.",
   icons: {
-    icon: "life-point-logo.png",
-    shortcut: "life-point-logo.png",
-    apple: "life-point-logo.png",
+    icon: "nunccare-logo.png",
+    shortcut: "nunccare-logo.png",
+    apple: "nunccare-logo.png",
   },
 };
 

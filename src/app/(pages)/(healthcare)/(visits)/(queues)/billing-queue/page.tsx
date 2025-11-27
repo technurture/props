@@ -2,7 +2,7 @@ import QueuePage from "@/components/visits/queue/QueuePage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Billing Queue | Life Point Medical Centre EMR",
+  title: "Billing Queue | NuncCare EMR",
 };
 
 export default function BillingQueuePage() {

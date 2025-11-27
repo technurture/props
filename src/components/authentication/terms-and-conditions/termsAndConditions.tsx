@@ -18,13 +18,13 @@ const TermsAndConditionsComponent = () => {
           <div className="card mb-0">
             <div className="card-body">
               <p>
-                Welcome to Life Point Medical Centre EMR platform. This platform is designed to help
+                Welcome to NuncCare EMR platform. This platform is designed to help
                 healthcare providers efficiently manage patient information,
                 streamline workflows, and ensure secure access to medical records.
               </p>
               <h6 className="mb-3">Acceptance of Terms</h6>
               <p className="mb-3">
-                By accessing or using our Life Point Medical Centre EMR, you agree to be bound by these
+                By accessing or using our NuncCare EMR, you agree to be bound by these
                 Terms &amp; Conditions. If you do not agree, please do not use the
                 Platform.
               </p>

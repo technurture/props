@@ -198,12 +198,12 @@ const BillingViewModal = ({ record, onClose }: BillingViewModalProps) => {
                     <ImageWithBasePath
                       src="assets/img/lifepoint-logo-dark.svg"
                       className="invoice-logo"
-                      alt="Life Point Medical Centre"
+                      alt="NuncCare"
                     />
                     <ImageWithBasePath
                       src="assets/img/lifepoint-logo.svg"
                       className="invoice-logo-white"
-                      alt="Life Point Medical Centre"
+                      alt="NuncCare"
                     />
                   </div>
                   <div className="text-end">
@@ -217,7 +217,7 @@ const BillingViewModal = ({ record, onClose }: BillingViewModalProps) => {
                   <div className="col-lg-6">
                     <div>
                       <h6 className="mb-2 fs-16 fw-bold">Invoice From</h6>
-                      <h6 className="fs-14 mb-2">{branch?.name || 'Life Point Medical Centre'}</h6>
+                      <h6 className="fs-14 mb-2">{branch?.name || 'NuncCare'}</h6>
                       <p className="mb-1">
                         {branch?.address || '15 Hodges Mews, High Wycombe HP12 3JL'}
                         {branch?.city && branch?.state && <><br />{branch.city}, {branch.state}</>}

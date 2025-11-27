@@ -2,7 +2,7 @@ import SecuritySettingsComponent from "@/components/manage/settings/securitySett
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Security Settiings | Life Point Medical Centre EMR",
+  title: "Security Settiings | NuncCare EMR",
 };
 
 

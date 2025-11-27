@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "All doctors list | Life Point Medical Centre EMR",
+    "All doctors list | NuncCare EMR",
 };
 
 export default function AllDoctorsListPage() {

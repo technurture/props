@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Edit doctors | Life Point Medical Centre EMR",
+    "Edit doctors | NuncCare EMR",
 };
 
 export const dynamic = 'force-dynamic';

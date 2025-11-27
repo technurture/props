@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Chat | Life Point Medical Centre EMR",
+    "Chat | NuncCare EMR",
 };
 
 export default function ChatPage() {

@@ -548,15 +548,15 @@ const Header = () => {
               {/* Logo Normal */}
               <span className="logo-light">
                 <span className="logo-lg">
-                  <ImageWithBasePath src="life-point-logo.png" alt="Life Point Medical Centre" width={42} height={42} />
+                  <ImageWithBasePath src="nunccare-logo.png" alt="NuncCare" width={42} height={42} />
                 </span>
               </span>
               {/* Logo Dark */}
               <span className="logo-dark">
                 <span className="logo-lg">
                   <ImageWithBasePath
-                    src="life-point-logo.png"
-                    alt="Life Point Medical Centre"
+                    src="nunccare-logo.png"
+                    alt="NuncCare"
                     width={42}
                     height={42}
                   />
@@ -567,8 +567,8 @@ const Header = () => {
               <span className="logo-small">
                 <span className="logo-lg">
                   <ImageWithBasePath
-                    src="life-point-logo.png"
-                    alt="Life Point Medical Centre"
+                    src="nunccare-logo.png"
+                    alt="NuncCare"
                     width={32}
                     height={32}
                   />

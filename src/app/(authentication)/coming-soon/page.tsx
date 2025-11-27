@@ -2,7 +2,7 @@ import ComingSoonComponent from "@/components/authentication/coming-soon/comingS
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Coming soon | Life Point Medical Centre EMR",
+  title: "Coming soon | NuncCare EMR",
 };
 
 

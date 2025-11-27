@@ -6,7 +6,7 @@ const StartVisitsComponent = dynamic(() => import("@/components/visits/startVisi
 
 export const metadata: Metadata = {
   title:
-    "Start Visits | Life Point Medical Centre EMR",
+    "Start Visits | NuncCare EMR",
 };
 
 export default function StartVisitsPage() {

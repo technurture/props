@@ -2,7 +2,7 @@ import ChangePasswordComponent from "@/components/authentication/change-password
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Change password | Life Point Medical Centre EMR",
+  title: "Change password | NuncCare EMR",
 };
 
 

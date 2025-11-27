@@ -3,7 +3,7 @@ import ForgotPasswordComponent from "@/components/authentication/forgot-password
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Forgot password | Life Point Medical Centre EMR",
+  title: "Forgot password | NuncCare EMR",
 };
 
 export default function ForgotPasswordPage(){

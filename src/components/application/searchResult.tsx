@@ -80,7 +80,7 @@ const SearchResultComponent = () => {
               <input
                 type="text"
                 className="form-control flex-fill me-3"
-                defaultValue="Life Point Medical Centre EMR"
+                defaultValue="NuncCare EMR"
               />
               <button type="submit" className="btn btn-primary">
                 <i className="ti ti-search me-1" />
@@ -95,7 +95,7 @@ const SearchResultComponent = () => {
       <div className="card mb-0">
         <div className="card-body">
           <h6 className="mb-3 text-capitalize">
-            Search result for "Life Point Medical Centre EMR"
+            Search result for "NuncCare EMR"
           </h6>
           {/* start row */}
           <div className="row">
@@ -108,7 +108,7 @@ const SearchResultComponent = () => {
                   >
                     https://themeforest.net/search/dreamsemr
                   </Link>
-                  <h6>Life Point Medical Centre EMR</h6>
+                  <h6>NuncCare EMR</h6>
                   <p className="text-truncate line-clamb-2 mb-2">
                     DreamEMR - Html, Vue 3, Angular 17+ &amp; Node Clinical
                     Management &amp; Doctor Booking Template
@@ -144,9 +144,9 @@ const SearchResultComponent = () => {
                   >
                     https://themeforest.net/search/dreamsemr
                   </Link>
-                  <h6>Life Point Medical Centre EMR</h6>
+                  <h6>NuncCare EMR</h6>
                   <p className="text-truncate line-clamb-2 mb-2">
-                    Life Point Medical Centre EMR - Html, React Js, Vue Js Clinical Management &amp;
+                    NuncCare EMR - Html, React Js, Vue Js Clinical Management &amp;
                     Doctor Booking Admin Template
                   </p>
                   <div className="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
@@ -180,9 +180,9 @@ const SearchResultComponent = () => {
                   >
                     https://themeforest.net/search/dreamsemr
                   </Link>
-                  <h6>Life Point Medical Centre EMR</h6>
+                  <h6>NuncCare EMR</h6>
                   <p className="text-truncate line-clamb-2 mb-2">
-                    Life Point Medical Centre EMR - Html, Vue 3, Angular 17+ &amp; Node Hospital
+                    NuncCare EMR - Html, Vue 3, Angular 17+ &amp; Node Hospital
                     Management &amp; Doctor Booking Appointment
                   </p>
                   <div className="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
@@ -216,9 +216,9 @@ const SearchResultComponent = () => {
                   >
                     https://themeforest.net/search/dreamsemr
                   </Link>
-                  <h6>Life Point Medical Centre EMR</h6>
+                  <h6>NuncCare EMR</h6>
                   <p className="text-truncate line-clamb-2 mb-2">
-                    Life Point Medical Centre EMR - Html, Vue 3, Angular 17+ &amp; Node Hospital
+                    NuncCare EMR - Html, Vue 3, Angular 17+ &amp; Node Hospital
                     Management &amp; Doctor Booking Appointment
                   </p>
                   <div className="d-flex align-items-center justify-content-between flex-wrap row-gap-2">

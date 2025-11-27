@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Email Details | Life Point Medical Centre EMR",
+    "Email Details | NuncCare EMR",
 };
 
 export default function EmailDetailsPage() {

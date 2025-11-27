@@ -2,7 +2,7 @@ import QueueMonitoringDashboard from "@/components/dashboard/QueueMonitoringDash
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Queue Monitoring | Life Point Medical Centre EMR",
+  title: "Queue Monitoring | NuncCare EMR",
   description: "Real-time monitoring of all department queues",
 };
 

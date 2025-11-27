@@ -10,9 +10,9 @@ const CommonFooter = () => {
         <Link
           href="#"
           className="link-primary ms-1"
-          aria-label="Life Point Medical Centre website"
+          aria-label="NuncCare website"
         >
-          Life Point Medical Centre 
+          NuncCare 
         </Link>{" "}
         - All Rights Reserved.
       </p>

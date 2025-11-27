@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Email Compose | Life Point Medical Centre EMR",
+    "Email Compose | NuncCare EMR",
 };
 
 export default function EmailComposePage() {

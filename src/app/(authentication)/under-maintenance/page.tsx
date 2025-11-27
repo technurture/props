@@ -2,7 +2,7 @@ import UnderMaintenanceComponent from "@/components/authentication/under-mainten
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Under Maintenance | Life Point Medical Centre EMR",
+  title: "Under Maintenance | NuncCare EMR",
 };
 
 

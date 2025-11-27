@@ -2944,3 +2944,240 @@ $border-color: #E5E7EB;
     }
   }
 }
+
+// Hero Image Container Styles
+.hero-section {
+  .hero-image {
+    .hero-image-container {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+
+      .hero-main-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .hero-image-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+
+        .overlay-card {
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(10px);
+          padding: 1rem 1.5rem;
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+          .overlay-icon {
+            width: 48px;
+            height: 48px;
+            background: $primary-color;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            font-size: 1.25rem;
+          }
+
+          .overlay-text {
+            strong {
+              display: block;
+              color: $secondary-color;
+              font-size: 1rem;
+              margin-bottom: 2px;
+            }
+
+            span {
+              color: $text-light;
+              font-size: 0.875rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Image Showcase Section
+.image-showcase {
+  padding: 6rem 1.5rem;
+  background: $bg-light;
+
+  .showcase-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .showcase-image {
+    .showcase-img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .showcase-content {
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $secondary-color;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: $text-light;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .showcase-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.625rem 0;
+        color: $text-color;
+        font-size: 1rem;
+
+        :first-child {
+          color: $primary-color;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .btn-learn-more {
+      display: inline-block;
+      background: $primary-color;
+      color: $white;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:hover {
+        background: darken($primary-color, 8%);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Multi-Tenancy Section
+.multi-tenancy-section {
+  padding: 6rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  .tenancy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .tenancy-image {
+    .tenancy-img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .tenancy-features {
+    .tenancy-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+
+      .tenancy-icon {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        background: rgba($primary-color, 0.1);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: $primary-color;
+      }
+
+      .tenancy-text {
+        h4 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: $secondary-color;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          color: $text-light;
+          line-height: 1.6;
+          margin: 0;
+        }
+      }
+    }
+
+    .tenancy-cta {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid $border-color;
+
+      .btn-primary {
+        display: inline-block;
+        background: $primary-color;
+        color: $white;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s;
+
+        &:hover {
+          background: darken($primary-color, 8%);
+          transform: translateY(-2px);
+          box-shadow: 0 10px 20px rgba($primary-color, 0.3);
+        }
+      }
+    }
+  }
+}

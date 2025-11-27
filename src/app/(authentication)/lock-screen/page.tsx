@@ -3,7 +3,7 @@ import LockScreenComponent from "@/components/authentication/lock-screen/lockScr
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lock Screen | Life Point Medical Centre EMR",
+  title: "Lock Screen | NuncCare EMR",
 };
 
 

@@ -72,7 +72,7 @@ const PaymentReceipt = forwardRef<HTMLDivElement, PaymentReceiptProps>(
         <div style={{ borderBottom: '3px solid #0d6efd', paddingBottom: '20px', marginBottom: '30px' }}>
           <div style={{ textAlign: 'center' }}>
             <h1 style={{ fontSize: '28px', color: '#0d6efd', marginBottom: '5px', fontWeight: 'bold' }}>
-              Life Point Medical Centre
+              NuncCare
             </h1>
             <p style={{ fontSize: '14px', color: '#6c757d', margin: '0' }}>
               Professional Healthcare Services
@@ -269,7 +269,7 @@ const PaymentReceipt = forwardRef<HTMLDivElement, PaymentReceiptProps>(
 
         <div style={{ marginTop: '40px', paddingTop: '20px', borderTop: '2px solid #dee2e6', textAlign: 'center' }}>
           <p style={{ fontSize: '12px', color: '#6c757d', margin: '5px 0' }}>
-            Life Point Medical Centre
+            NuncCare
           </p>
           <p style={{ fontSize: '12px', color: '#6c757d', margin: '5px 0' }}>
             Professional Healthcare Services

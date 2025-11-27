@@ -2,7 +2,7 @@ import DashboardComponent from "@/components/dashboard/dashboard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dashboard | Life Point Medical Centre EMR",
+  title: "Dashboard | NuncCare EMR",
 };
 
 

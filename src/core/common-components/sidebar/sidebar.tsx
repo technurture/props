@@ -208,13 +208,13 @@ const Sidebar = () => {
         <div className="sidebar-logo">
           <div>
             <Link href={route.dashboard} className="logo logo-normal">
-              <ImageWithBasePath src="life-point-logo.png" alt="Life Point Medical Centre" width={50} height={50} />
+              <ImageWithBasePath src="nunccare-logo.png" alt="NuncCare EMR" width={50} height={50} />
             </Link>
             <Link href={route.dashboard} className="logo-small">
-              <ImageWithBasePath src="life-point-logo.png" alt="Life Point Medical Centre" width={36} height={36} />
+              <ImageWithBasePath src="nunccare-logo.png" alt="NuncCare EMR" width={36} height={36} />
             </Link>
             <Link href={route.dashboard} className="dark-logo">
-              <ImageWithBasePath src="life-point-logo.png" alt="Life Point Medical Centre" width={50} height={50} />
+              <ImageWithBasePath src="nunccare-logo.png" alt="NuncCare EMR" width={50} height={50} />
             </Link>
           </div>
           <button

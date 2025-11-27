@@ -375,7 +375,7 @@ const EmailDetailsComponent = () => {
                           </ol>
                           <p className="mb-2">
                             Whether you're running a solo practice or a
-                            multi-specialty clinic, Life Point Medical Centre EMR helps you focus
+                            multi-specialty clinic, NuncCare EMR helps you focus
                             more on patient care and less on admin tasks.
                           </p>
                           <h6 className="fs-14 fw-medium mb-0">

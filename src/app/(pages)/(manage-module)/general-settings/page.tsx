@@ -2,7 +2,7 @@ import GeneralSettingsComponent from "@/components/manage/settings/generalSettin
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "General Settings | Life Point Medical Centre - EMR System",
+  title: "General Settings | NuncCare - EMR System",
 };
 
 export default function GeneralSettings(){

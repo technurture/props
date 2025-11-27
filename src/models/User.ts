@@ -11,6 +11,7 @@ export interface IUser extends Document {
   role: UserRole;
   branchId: mongoose.Types.ObjectId;
   assignedBranch?: mongoose.Types.ObjectId;
+  tenantId?: mongoose.Types.ObjectId;
   profileImage?: string;
   hospitalName?: string;
   addressLine1?: string;
@@ -74,6 +75,11 @@ const UserSchema = new Schema<IUser>({
   assignedBranch: {
     type: Schema.Types.ObjectId,
     ref: 'Branch'
+  },
+  tenantId: {
+    type: Schema.Types.ObjectId,
+    ref: 'Tenant',
+    index: true
   },
   profileImage: {
     type: String,

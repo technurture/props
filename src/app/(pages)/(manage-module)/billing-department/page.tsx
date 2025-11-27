@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BillingDepartmentComponent from "@/components/manage/billing/BillingDepartment";
 
 export const metadata: Metadata = {
-  title: "Billing Department | Life Point Medical Centre - EMR System",
+  title: "Billing Department | NuncCare - EMR System",
   description: "Manage billing records and invoices",
 };
 

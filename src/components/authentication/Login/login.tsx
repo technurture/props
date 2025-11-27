@@ -12,8 +12,8 @@ type PasswordField = "password" | "confirmPassword";
 const LoginComponent = () => {
   const navigate = useRouter();
   const [formData, setFormData] = useState({
-    email: "admin@lifepointmedical.com",
-    password: "admin123"
+    email: "",
+    password: ""
   });
   const [passwordVisibility, setPasswordVisibility] = useState({
     password: false,
@@ -35,31 +35,52 @@ const LoginComponent = () => {
     }));
   };
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Fake authentication - check if credentials match
-    if (formData.email === "admin@lifepointmedical.com" && formData.password === "admin123") {
-      // Simulate loading state
+    if (!formData.email || !formData.password) {
+      alert('Please enter your email and password');
+      return;
+    }
+
+    // Show loading state
+    if (typeof window !== "undefined") {
+      const loginButton = document.querySelector('.btn-login') as HTMLButtonElement;
+      if (loginButton) {
+        loginButton.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Signing In...';
+        loginButton.disabled = true;
+      }
+    }
+    
+    try {
+      const { signIn } = await import('next-auth/react');
+      const result = await signIn('credentials', {
+        email: formData.email,
+        password: formData.password,
+        redirect: false,
+      });
+
+      if (result?.error) {
+        alert('Invalid credentials. Please check your email and password.');
+        if (typeof window !== "undefined") {
+          const loginButton = document.querySelector('.btn-login') as HTMLButtonElement;
+          if (loginButton) {
+            loginButton.innerHTML = 'Sign In';
+            loginButton.disabled = false;
+          }
+        }
+      } else {
+        navigate.push(all_routes.dashboard);
+      }
+    } catch (error) {
+      alert('Login failed. Please try again.');
       if (typeof window !== "undefined") {
         const loginButton = document.querySelector('.btn-login') as HTMLButtonElement;
         if (loginButton) {
-          loginButton.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Signing In...';
-          loginButton.disabled = true;
+          loginButton.innerHTML = 'Sign In';
+          loginButton.disabled = false;
         }
       }
-      
-      // Simulate API delay
-      setTimeout(() => {
-        // Store fake auth token
-        localStorage.setItem('authToken', 'fake-jwt-token-12345');
-        localStorage.setItem('userEmail', formData.email);
-        
-        // Redirect to dashboard
-        navigate.push(all_routes.dashboard);
-      }, 1500);
-    } else {
-      alert('Invalid credentials. Please use admin@lifepointmedical.com / admin123');
     }
   };
   return (
@@ -82,9 +103,9 @@ const LoginComponent = () => {
                           <div className="mb-4">
                             <Link href={all_routes.dashboard} className="logo">
                               <ImageWithBasePath
-                                src="life-point-logo.png"
-                                className="img-fluid logo"
-                                alt="Life Point Medical Centre"
+                                src="nunccare-logo.png"
+                                className="img-fluid logo nunccare-login-logo"
+                                alt="NuncCare EMR"
                               />
                             </Link>
                           </div>

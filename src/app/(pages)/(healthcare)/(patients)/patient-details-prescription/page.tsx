@@ -4,7 +4,7 @@ import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title:
-    "Patient Details Prescription | Life Point Medical Centre EMR",
+    "Patient Details Prescription | NuncCare EMR",
 };
 
 export default function PatientsDetailsPrescriptionPage() {

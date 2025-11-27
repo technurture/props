@@ -50,12 +50,12 @@ const ManageInvoicesDetails = () => {
                         <ImageWithBasePath
                           src="assets/img/lifepoint-logo-dark.svg"
                           className="invoice-logo"
-                          alt="Life Point Medical Centre"
+                          alt="NuncCare"
                         />
                         <ImageWithBasePath
                           src="assets/img/lifepoint-logo.svg"
                           className="invoice-logo-white"
-                          alt="Life Point Medical Centre"
+                          alt="NuncCare"
                         />
                       </div>
                       <div className="text-end">
@@ -67,7 +67,7 @@ const ManageInvoicesDetails = () => {
                       <div className="col-lg-5">
                         <div>
                           <h6 className="mb-2 fs-16 fw-bold">Invoice From</h6>
-                          <h6 className="fs-14 mb-2">Life Point Medical Centre</h6>
+                          <h6 className="fs-14 mb-2">NuncCare</h6>
                           <p className="mb-1">
                             15 Hodges Mews, High Wycombe HP12 3JL, <br /> United
                             Kingdom
@@ -201,7 +201,7 @@ const ManageInvoicesDetails = () => {
                       <ImageWithBasePath src="" alt="sign" />
                     </div>
                     <p className="mb-0 fw-semibold">Authorized Signature</p>
-                    <p className="mb-0 text-muted fs-13">Life Point Medical Centre</p>
+                    <p className="mb-0 text-muted fs-13">NuncCare</p>
                   </div>
                 </div>
               </div>

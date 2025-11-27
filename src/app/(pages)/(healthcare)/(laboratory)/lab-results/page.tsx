@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Lab result | Life Point Medical Centre EMR",
+    "Lab result | NuncCare EMR",
 };
 
 export default function LabResultPage() {

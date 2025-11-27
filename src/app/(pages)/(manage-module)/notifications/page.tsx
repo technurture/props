@@ -3,7 +3,7 @@ import NotificationsComponent from "@/components/manage/notifications/notificati
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Notification | Life Point Medical Centre EMR",
+  title: "Notification | NuncCare EMR",
 };
 
 

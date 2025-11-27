@@ -12,7 +12,10 @@ import {
   DollarOutlined,
   BarChartOutlined,
   MobileOutlined,
-  GlobalOutlined
+  GlobalOutlined,
+  LockOutlined,
+  ApiOutlined,
+  BankOutlined
 } from '@ant-design/icons';
 
 const features = [
@@ -136,6 +139,24 @@ const stats = [
   { value: '24/7', label: 'Support Available' }
 ];
 
+const multiTenancyFeatures = [
+  {
+    icon: <LockOutlined />,
+    title: 'Complete Data Isolation',
+    description: 'Each healthcare organization has their own secure, isolated database space. Your patient data never mixes with others.'
+  },
+  {
+    icon: <BankOutlined />,
+    title: 'Independent Configuration',
+    description: 'Customize settings, branding, and workflows specific to your organization without affecting other tenants.'
+  },
+  {
+    icon: <ApiOutlined />,
+    title: 'Seamless Scalability',
+    description: 'Add unlimited branches, staff, and patients as your organization grows, all within your dedicated environment.'
+  }
+];
+
 export default function MarketingHomePage() {
   return (
     <div className="marketing-home">
@@ -157,8 +178,8 @@ export default function MarketingHomePage() {
             <Link href="/signup" className="btn-primary">
               Start Your Free 14-Day Trial
             </Link>
-            <Link href="/demo" className="btn-secondary">
-              Watch Demo
+            <Link href="/features" className="btn-secondary">
+              Explore Features
             </Link>
           </div>
           <div className="hero-trust">
@@ -171,25 +192,24 @@ export default function MarketingHomePage() {
           </div>
         </div>
         <div className="hero-image">
-          <div className="dashboard-preview">
-            <div className="preview-header">
-              <div className="preview-dots">
-                <span></span><span></span><span></span>
-              </div>
-              <span>NuncCare Dashboard</span>
-            </div>
-            <div className="preview-content">
-              <div className="preview-sidebar">
-                <div className="sidebar-item active"></div>
-                <div className="sidebar-item"></div>
-                <div className="sidebar-item"></div>
-                <div className="sidebar-item"></div>
-                <div className="sidebar-item"></div>
-              </div>
-              <div className="preview-main">
-                <div className="preview-card"></div>
-                <div className="preview-card"></div>
-                <div className="preview-chart"></div>
+          <div className="hero-image-container">
+            <Image
+              src="/marketing/doctor-ct-scanner.jpg"
+              alt="Doctor using advanced medical technology"
+              width={600}
+              height={450}
+              className="hero-main-image"
+              priority
+            />
+            <div className="hero-image-overlay">
+              <div className="overlay-card">
+                <div className="overlay-icon">
+                  <SafetyCertificateFilled />
+                </div>
+                <div className="overlay-text">
+                  <strong>Secure & Compliant</strong>
+                  <span>Enterprise-grade security</span>
+                </div>
               </div>
             </div>
           </div>
@@ -204,6 +224,37 @@ export default function MarketingHomePage() {
               <div className="stat-label">{stat.label}</div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="image-showcase">
+        <div className="showcase-container">
+          <div className="showcase-image">
+            <Image
+              src="/marketing/hospital-reception.jpg"
+              alt="Modern hospital reception"
+              width={500}
+              height={350}
+              className="showcase-img"
+            />
+          </div>
+          <div className="showcase-content">
+            <h2>Built for Modern Healthcare</h2>
+            <p>
+              NuncCare is designed from the ground up to meet the unique needs of 
+              healthcare providers in Africa. From patient registration to billing, 
+              we handle every aspect of your clinic&apos;s operations.
+            </p>
+            <ul className="showcase-list">
+              <li><CheckCircleFilled /> Multi-branch support for growing organizations</li>
+              <li><CheckCircleFilled /> Real-time patient queue management</li>
+              <li><CheckCircleFilled /> Integrated lab and pharmacy workflows</li>
+              <li><CheckCircleFilled /> Comprehensive reporting and analytics</li>
+            </ul>
+            <Link href="/features" className="btn-learn-more">
+              Learn More About Features
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -263,6 +314,43 @@ export default function MarketingHomePage() {
             <div className="step-number">5</div>
             <h4>Billing</h4>
             <p>Invoice generated and payment processed</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="multi-tenancy-section">
+        <div className="section-header">
+          <h2>Multi-Tenancy Architecture</h2>
+          <p>
+            Each healthcare organization gets their own secure, isolated environment. 
+            Your data stays yours - completely separate from other organizations.
+          </p>
+        </div>
+        <div className="tenancy-content">
+          <div className="tenancy-image">
+            <Image
+              src="/marketing/doctor-tablet.jpg"
+              alt="Doctor using digital healthcare technology"
+              width={500}
+              height={350}
+              className="tenancy-img"
+            />
+          </div>
+          <div className="tenancy-features">
+            {multiTenancyFeatures.map((feature, index) => (
+              <div key={index} className="tenancy-feature">
+                <div className="tenancy-icon">{feature.icon}</div>
+                <div className="tenancy-text">
+                  <h4>{feature.title}</h4>
+                  <p>{feature.description}</p>
+                </div>
+              </div>
+            ))}
+            <div className="tenancy-cta">
+              <Link href="/signup" className="btn-primary">
+                Get Your Dedicated Environment
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -339,7 +427,7 @@ export default function MarketingHomePage() {
           <div className="security-text">
             <h2>Enterprise-Grade Security</h2>
             <p>
-              Your patients' data deserves the highest level of protection. 
+              Your patients&apos; data deserves the highest level of protection. 
               NuncCare is built from the ground up with security and compliance in mind.
             </p>
             <ul className="security-features">
@@ -386,8 +474,8 @@ export default function MarketingHomePage() {
             <Link href="/signup" className="btn-primary">
               Start Your Free 14-Day Trial
             </Link>
-            <Link href="/demo" className="btn-secondary">
-              Schedule a Demo
+            <Link href="/contact" className="btn-secondary">
+              Talk to Sales
             </Link>
           </div>
         </div>

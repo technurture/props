@@ -111,7 +111,7 @@ const pricingPlans = [
 
 const testimonials = [
   {
-    quote: "MedVault transformed how we manage patient records. The intuitive interface means our staff spent less time on paperwork and more time with patients.",
+    quote: "NuncCare transformed how we manage patient records. The intuitive interface means our staff spent less time on paperwork and more time with patients.",
     author: "Dr. Amina Okonkwo",
     role: "Medical Director",
     clinic: "Lagos Family Clinic"
@@ -144,13 +144,13 @@ export default function MarketingHomePage() {
         <div className="nav-container">
           <Link href="/" className="nav-logo">
             <Image 
-              src="/branding/medvault_healthcare_saas_logo.png" 
-              alt="MedVault" 
+              src="/branding/nunccare_logo.png" 
+              alt="NuncCare" 
               width={40} 
               height={40}
               className="logo-icon"
             />
-            <span className="logo-text">MedVault</span>
+            <span className="logo-text">NuncCare</span>
           </Link>
           
           <div className="nav-links">
@@ -206,7 +206,7 @@ export default function MarketingHomePage() {
                   <div className="preview-dots">
                     <span></span><span></span><span></span>
                   </div>
-                  <span>MedVault Dashboard</span>
+                  <span>NuncCare Dashboard</span>
                 </div>
                 <div className="preview-content">
                   <div className="preview-sidebar">
@@ -241,7 +241,7 @@ export default function MarketingHomePage() {
             <div className="section-header">
               <h2>Everything You Need to Run Your Practice</h2>
               <p>
-                From patient registration to billing, MedVault handles every aspect of 
+                From patient registration to billing, NuncCare handles every aspect of 
                 your healthcare operations with powerful, easy-to-use tools.
               </p>
             </div>
@@ -343,7 +343,7 @@ export default function MarketingHomePage() {
           <section className="testimonials-section">
             <div className="section-header">
               <h2>Trusted by Healthcare Providers</h2>
-              <p>See what our customers have to say about MedVault</p>
+              <p>See what our customers have to say about NuncCare</p>
             </div>
             <div className="testimonials-grid">
               {testimonials.map((testimonial, index) => (
@@ -370,7 +370,7 @@ export default function MarketingHomePage() {
                 <h2>Enterprise-Grade Security</h2>
                 <p>
                   Your patients&apos; data deserves the highest level of protection. 
-                  MedVault is built from the ground up with security and compliance in mind.
+                  NuncCare is built from the ground up with security and compliance in mind.
                 </p>
                 <ul className="security-features">
                   <li>
@@ -409,7 +409,7 @@ export default function MarketingHomePage() {
             <div className="cta-content">
               <h2>Ready to Transform Your Practice?</h2>
               <p>
-                Join hundreds of healthcare providers who trust MedVault to manage 
+                Join hundreds of healthcare providers who trust NuncCare to manage 
                 their operations. Start your free trial today - no credit card required.
               </p>
               <div className="cta-buttons">
@@ -429,12 +429,12 @@ export default function MarketingHomePage() {
         <div className="footer-container">
           <div className="footer-brand">
             <Image 
-              src="/branding/medvault_healthcare_saas_logo.png" 
-              alt="MedVault" 
+              src="/branding/nunccare_logo.png" 
+              alt="NuncCare" 
               width={32} 
               height={32}
             />
-            <span>MedVault</span>
+            <span>NuncCare</span>
             <p>The secure, modern EMR solution for healthcare providers across Africa.</p>
           </div>
           
@@ -465,7 +465,7 @@ export default function MarketingHomePage() {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} MedVault. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} NuncCare. All rights reserved.</p>
           <p>Built with care for healthcare providers.</p>
         </div>
       </footer>

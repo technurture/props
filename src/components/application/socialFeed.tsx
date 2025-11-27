@@ -1484,7 +1484,7 @@ const SocialFeedComponent = () => {
         <p className="mb-0 text-dark">
           2025 ©{" "}
           <Link href="#" className="link-primary">
-            Life Point Medical Centre EMR
+            NuncCare EMR
           </Link>{" "}
           - All Rights Reserved.
         </p>
