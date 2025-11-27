@@ -89,7 +89,7 @@ export async function seedDatabase(force: boolean = false) {
 
     // Create main branch
     const mainBranch = await Branch.create({
-      name: 'Life Point Medical Centre - Main Branch',
+      name: 'NuncCare - Main Branch',
       code: 'LPMC-MAIN',
       address: '123 Medical Avenue',
       city: 'Lagos',

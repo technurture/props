@@ -1,15 +1,15 @@
-// NuncCare EMR Brand Colors
-$nunccare-primary: #0D9488; // Primary teal from marketing pages
-$nunccare-secondary: #1E3A5F; // Secondary dark blue
-$nunccare-primary-light: #14B8A6;
-$nunccare-primary-dark: #0F766E;
-$nunccare-secondary-light: #2D4A6F;
-$nunccare-secondary-dark: #152D4A;
+// NuncCare Medical Centre Brand Colors
+$lifepoint-blue: #1e40af; // Primary blue from logo
+$lifepoint-red: #dc2626; // Medical red from logo
+$lifepoint-blue-light: #3b82f6;
+$lifepoint-blue-dark: #1e3a8a;
+$lifepoint-red-light: #ef4444;
+$lifepoint-red-dark: #b91c1c;
 
 // Override Bootstrap primary and danger colors
-$primary: $nunccare-primary !default;
-$info: $nunccare-primary-light !default;
-$danger: #dc2626;
+$primary: $lifepoint-blue !default;
+$danger: $lifepoint-red !default;
+$info: $lifepoint-blue-light !default;
 
 // Additional theme colors
 $success: #10b981;
@@ -18,83 +18,63 @@ $secondary: #6b7280;
 
 // Custom CSS variables for NuncCare theme
 :root {
-  --nunccare-primary: #{$nunccare-primary};
-  --nunccare-secondary: #{$nunccare-secondary};
-  --nunccare-primary-light: #{$nunccare-primary-light};
-  --nunccare-primary-dark: #{$nunccare-primary-dark};
-  --nunccare-secondary-light: #{$nunccare-secondary-light};
-  --nunccare-secondary-dark: #{$nunccare-secondary-dark};
-  
-  // Legacy support for existing styles
-  --lifepoint-blue: #{$nunccare-primary};
-  --lifepoint-red: #dc2626;
-  --lifepoint-blue-light: #{$nunccare-primary-light};
-  --lifepoint-blue-dark: #{$nunccare-primary-dark};
+  --lifepoint-blue: #{$lifepoint-blue};
+  --lifepoint-red: #{$lifepoint-red};
+  --lifepoint-blue-light: #{$lifepoint-blue-light};
+  --lifepoint-blue-dark: #{$lifepoint-blue-dark};
+  --lifepoint-red-light: #{$lifepoint-red-light};
+  --lifepoint-red-dark: #{$lifepoint-red-dark};
 }
 
 // Update primary button styles
 .btn-primary {
-  background-color: $nunccare-primary;
-  border-color: $nunccare-primary;
+  background-color: $lifepoint-blue;
+  border-color: $lifepoint-blue;
   
   &:hover {
-    background-color: $nunccare-primary-dark;
-    border-color: $nunccare-primary-dark;
+    background-color: $lifepoint-blue-dark;
+    border-color: $lifepoint-blue-dark;
   }
 }
 
 .btn-danger {
-  background-color: #dc2626;
-  border-color: #dc2626;
+  background-color: $lifepoint-red;
+  border-color: $lifepoint-red;
   
   &:hover {
-    background-color: #b91c1c;
-    border-color: #b91c1c;
+    background-color: $lifepoint-red-dark;
+    border-color: $lifepoint-red-dark;
   }
 }
 
 // Update links
 a {
-  color: $nunccare-primary;
+  color: $lifepoint-blue;
   
   &:hover {
-    color: $nunccare-primary-dark;
+    color: $lifepoint-blue-dark;
   }
 }
 
 // Badge styles
 .badge-primary {
-  background-color: $nunccare-primary;
+  background-color: $lifepoint-blue;
 }
 
 .badge-danger {
-  background-color: #dc2626;
+  background-color: $lifepoint-red;
 }
 
 // Custom NuncCare specific styles
-.nunccare-gradient {
-  background: linear-gradient(135deg, $nunccare-primary 0%, $nunccare-primary-light 100%);
-}
-
-.nunccare-header {
-  background-color: $nunccare-secondary;
-  color: white;
-}
-
-.nunccare-card {
-  border-top: 3px solid $nunccare-primary;
-}
-
-// Legacy class support
 .lifepoint-gradient {
-  background: linear-gradient(135deg, $nunccare-primary 0%, $nunccare-primary-light 100%);
+  background: linear-gradient(135deg, $lifepoint-blue 0%, $lifepoint-blue-light 100%);
 }
 
 .lifepoint-header {
-  background-color: $nunccare-secondary;
+  background-color: $lifepoint-blue;
   color: white;
 }
 
 .lifepoint-card {
-  border-top: 3px solid $nunccare-primary;
+  border-top: 3px solid $lifepoint-blue;
 }
