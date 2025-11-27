@@ -99,11 +99,11 @@ const faqs = [
   },
   {
     question: 'Is there a setup fee?',
-    answer: 'No, there are no setup fees. You can start using MedVault immediately after signing up. We also offer free data migration assistance for Professional and Enterprise plans.'
+    answer: 'No, there are no setup fees. You can start using NuncCare immediately after signing up. We also offer free data migration assistance for Professional and Enterprise plans.'
   },
   {
     question: 'How secure is my data?',
-    answer: 'MedVault uses enterprise-grade security including 256-bit encryption, regular backups, and is compliant with HIPAA and NDPR regulations. Your data is stored in secure, geographically distributed data centers.'
+    answer: 'NuncCare uses enterprise-grade security including 256-bit encryption, regular backups, and is compliant with HIPAA and NDPR regulations. Your data is stored in secure, geographically distributed data centers.'
   },
   {
     question: 'Can I add more users than my plan allows?',
@@ -205,7 +205,7 @@ export default function PricingPage() {
 
       <section className="pricing-cta">
         <h2>Ready to Get Started?</h2>
-        <p>Join hundreds of healthcare providers who trust MedVault. Start your free trial today.</p>
+        <p>Join hundreds of healthcare providers who trust NuncCare. Start your free trial today.</p>
         <div className="cta-buttons">
           <Link href="/signup" className="btn-primary">Start Your Free Trial</Link>
           <Link href="/contact" className="btn-secondary">Talk to Sales</Link>

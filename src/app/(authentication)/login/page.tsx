@@ -156,14 +156,14 @@ export default function LoginPage() {
             <div className="login-hero-content">
               <div className="text-center">
                 <Image
-                  src="/life-point-logo.png"
-                  alt="Life Point Medical Centre"
+                  src="/branding/nunccare_logo.png"
+                  alt="NuncCare"
                   width={120}
                   height={120}
                   className="mb-3 mb-lg-4 login-logo"
                   priority={true}
                 />
-                <h1 className="fw-bold text-white mb-2 mb-lg-3 login-hero-title">Life Point Medical Centre</h1>
+                <h1 className="fw-bold text-white mb-2 mb-lg-3 login-hero-title">NuncCare</h1>
                 <p className="lead text-white mb-3 mb-lg-4 login-hero-subtitle">Electronic Medical Records System</p>
                 <div className="login-hero-features">
                   <p className="mb-2 text-white"><i className="fas fa-shield-alt me-2"></i>Secure & Confidential</p>
@@ -178,21 +178,21 @@ export default function LoginPage() {
           <div className="login-form-container w-100 p-3 p-sm-4">
             <div className="text-center mb-3 mb-md-4 d-md-none">
               <Image
-                src="/life-point-logo.png"
-                alt="Life Point Medical Centre"
+                src="/branding/nunccare_logo.png"
+                alt="NuncCare"
                 width={70}
                 height={70}
                 className="mb-3 mobile-logo"
                 priority={true}
               />
-              <h2 className="fw-bold mb-2 mobile-title" style={{ color: 'var(--lifepoint-blue)' }}>
-                Life Point Medical Centre
+              <h2 className="fw-bold mb-2 mobile-title" style={{ color: 'var(--nunccare-primary)' }}>
+                NuncCare
               </h2>
               <p className="text-muted mobile-subtitle">Electronic Medical Records System</p>
             </div>
 
             <div className="d-none d-md-block text-center mb-4">
-              <h2 className="fw-bold mb-2 desktop-welcome" style={{ color: 'var(--lifepoint-blue)' }}>
+              <h2 className="fw-bold mb-2 desktop-welcome" style={{ color: 'var(--nunccare-primary)' }}>
                 Welcome Back
               </h2>
               <p className="text-muted">Sign in to access the EMR system</p>
@@ -285,7 +285,7 @@ export default function LoginPage() {
                     Remember me
                   </label>
                 </div>
-                <a href="/forgot-password" className="text-decoration-none small" style={{ color: 'var(--lifepoint-blue)' }}>
+                <a href="/forgot-password" className="text-decoration-none small" style={{ color: 'var(--nunccare-primary)' }}>
                   Forgot password?
                 </a>
               </div>

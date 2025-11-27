@@ -1,7 +1,7 @@
 @use "../style/scss/main.scss";
 @use "../style/scss/variables" as *;
 @use "../style/scss/utils/mixins" as *;
-@use "./lifepoint-theme.scss";
+@use "./nunccare-theme.scss";
 
 .kanban-view {
     overflow-x: scroll;

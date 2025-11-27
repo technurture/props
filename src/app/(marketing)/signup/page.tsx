@@ -163,16 +163,16 @@ export default function SignupPage() {
           <div className="benefits-content">
             <Link href="/" className="back-link">
               <Image 
-                src="/branding/medvault_healthcare_saas_logo.png" 
-                alt="MedVault" 
+                src="/branding/nunccare_logo.png" 
+                alt="NuncCare" 
                 width={48} 
                 height={48}
               />
-              <span>MedVault</span>
+              <span>NuncCare</span>
             </Link>
             
             <h2>Start Your Free Trial Today</h2>
-            <p>Join hundreds of healthcare providers who trust MedVault to manage their operations.</p>
+            <p>Join hundreds of healthcare providers who trust NuncCare to manage their operations.</p>
             
             <ul className="benefits-list">
               {benefits.map((benefit, index) => (
@@ -184,7 +184,7 @@ export default function SignupPage() {
             </ul>
             
             <div className="testimonial-mini">
-              <p>&ldquo;MedVault transformed how we manage patient records. Setup was incredibly easy.&rdquo;</p>
+              <p>&ldquo;NuncCare transformed how we manage patient records. Setup was incredibly easy.&rdquo;</p>
               <div className="testimonial-author">
                 <strong>Dr. Amina Okonkwo</strong>
                 <span>Lagos Family Clinic</span>
@@ -238,7 +238,7 @@ export default function SignupPage() {
                 {errors.organizationName && (
                   <span className="error-text">{errors.organizationName}</span>
                 )}
-                <span className="helper-text">This will be your organization&apos;s name in MedVault</span>
+                <span className="helper-text">This will be your organization&apos;s name in NuncCare</span>
               </div>
               
               <button type="submit" className="btn-submit">
@@ -386,7 +386,7 @@ export default function SignupPage() {
               <div className="success-icon">
                 <CheckCircleFilled />
               </div>
-              <h2>Welcome to MedVault!</h2>
+              <h2>Welcome to NuncCare!</h2>
               <p>Your account has been created successfully.</p>
               <p className="success-detail">
                 We&apos;ve sent a confirmation email to <strong>{formData.email}</strong>. 

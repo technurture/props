@@ -16,13 +16,13 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
         <div className="nav-container">
           <Link href="/" className="nav-logo">
             <Image 
-              src="/branding/medvault_healthcare_saas_logo.png" 
-              alt="MedVault" 
+              src="/branding/nunccare_logo.png" 
+              alt="NuncCare" 
               width={40} 
               height={40}
               className="logo-icon"
             />
-            <span className="logo-text">MedVault</span>
+            <span className="logo-text">NuncCare</span>
           </Link>
           
           <div className="nav-links">
@@ -47,12 +47,12 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
         <div className="footer-container">
           <div className="footer-brand">
             <Image 
-              src="/branding/medvault_healthcare_saas_logo.png" 
-              alt="MedVault" 
+              src="/branding/nunccare_logo.png" 
+              alt="NuncCare" 
               width={32} 
               height={32}
             />
-            <span>MedVault</span>
+            <span>NuncCare</span>
             <p>The secure, modern EMR solution for healthcare providers across Africa.</p>
           </div>
           
@@ -83,7 +83,7 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} MedVault. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} NuncCare. All rights reserved.</p>
           <p>Built with care for healthcare providers.</p>
         </div>
       </footer>

@@ -2,7 +2,7 @@ import { headers } from 'next/headers';
 import dbConnect from './dbConnect';
 import Tenant, { ITenant } from '@/models/Tenant';
 
-const ROOT_DOMAIN = process.env.ROOT_DOMAIN || 'medvault.app';
+const ROOT_DOMAIN = process.env.ROOT_DOMAIN || 'nunccare.app';
 const MARKETING_HOSTS = [
   'localhost',
   '127.0.0.1',

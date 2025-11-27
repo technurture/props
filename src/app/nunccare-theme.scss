@@ -1,0 +1,100 @@
+// NuncCare EMR Brand Colors
+$nunccare-primary: #0D9488; // Primary teal from marketing pages
+$nunccare-secondary: #1E3A5F; // Secondary dark blue
+$nunccare-primary-light: #14B8A6;
+$nunccare-primary-dark: #0F766E;
+$nunccare-secondary-light: #2D4A6F;
+$nunccare-secondary-dark: #152D4A;
+
+// Override Bootstrap primary and danger colors
+$primary: $nunccare-primary !default;
+$info: $nunccare-primary-light !default;
+$danger: #dc2626;
+
+// Additional theme colors
+$success: #10b981;
+$warning: #f59e0b;
+$secondary: #6b7280;
+
+// Custom CSS variables for NuncCare theme
+:root {
+  --nunccare-primary: #{$nunccare-primary};
+  --nunccare-secondary: #{$nunccare-secondary};
+  --nunccare-primary-light: #{$nunccare-primary-light};
+  --nunccare-primary-dark: #{$nunccare-primary-dark};
+  --nunccare-secondary-light: #{$nunccare-secondary-light};
+  --nunccare-secondary-dark: #{$nunccare-secondary-dark};
+  
+  // Legacy support for existing styles
+  --lifepoint-blue: #{$nunccare-primary};
+  --lifepoint-red: #dc2626;
+  --lifepoint-blue-light: #{$nunccare-primary-light};
+  --lifepoint-blue-dark: #{$nunccare-primary-dark};
+}
+
+// Update primary button styles
+.btn-primary {
+  background-color: $nunccare-primary;
+  border-color: $nunccare-primary;
+  
+  &:hover {
+    background-color: $nunccare-primary-dark;
+    border-color: $nunccare-primary-dark;
+  }
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  border-color: #dc2626;
+  
+  &:hover {
+    background-color: #b91c1c;
+    border-color: #b91c1c;
+  }
+}
+
+// Update links
+a {
+  color: $nunccare-primary;
+  
+  &:hover {
+    color: $nunccare-primary-dark;
+  }
+}
+
+// Badge styles
+.badge-primary {
+  background-color: $nunccare-primary;
+}
+
+.badge-danger {
+  background-color: #dc2626;
+}
+
+// Custom NuncCare specific styles
+.nunccare-gradient {
+  background: linear-gradient(135deg, $nunccare-primary 0%, $nunccare-primary-light 100%);
+}
+
+.nunccare-header {
+  background-color: $nunccare-secondary;
+  color: white;
+}
+
+.nunccare-card {
+  border-top: 3px solid $nunccare-primary;
+}
+
+// Legacy class support
+.lifepoint-gradient {
+  background: linear-gradient(135deg, $nunccare-primary 0%, $nunccare-primary-light 100%);
+}
+
+.lifepoint-header {
+  background-color: $nunccare-secondary;
+  color: white;
+}
+
+.lifepoint-card {
+  border-top: 3px solid $nunccare-primary;
+}
